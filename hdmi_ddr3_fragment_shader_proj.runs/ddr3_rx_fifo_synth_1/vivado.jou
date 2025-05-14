@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct 25 15:28:27 2023
+# Process ID: 23684
+# Current directory: E:/Textbook/MicroPhase/Board_cd/A7_Lite/04_source_code/A7_lite_demo_200T/22_hdmi_ddr3_uart/hdmi_ddr3_uart.runs/ddr3_rx_fifo_synth_1
+# Command line: vivado.exe -log ddr3_rx_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ddr3_rx_fifo.tcl
+# Log file: E:/Textbook/MicroPhase/Board_cd/A7_Lite/04_source_code/A7_lite_demo_200T/22_hdmi_ddr3_uart/hdmi_ddr3_uart.runs/ddr3_rx_fifo_synth_1/ddr3_rx_fifo.vds
+# Journal file: E:/Textbook/MicroPhase/Board_cd/A7_Lite/04_source_code/A7_lite_demo_200T/22_hdmi_ddr3_uart/hdmi_ddr3_uart.runs/ddr3_rx_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ddr3_rx_fifo.tcl -notrace

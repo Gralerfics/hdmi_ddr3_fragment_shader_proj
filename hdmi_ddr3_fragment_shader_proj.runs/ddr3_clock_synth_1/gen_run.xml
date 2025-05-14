@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="ddr3_clock_synth_1" LaunchPart="xc7a200tfbg484-2" LaunchTime="1747198623">
+  <File Type="REPORTS-TCL" Name="ddr3_clock_reports.tcl"/>
+  <File Type="RDS-UTIL" Name="ddr3_clock_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ddr3_clock_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="ddr3_clock.tcl"/>
+  <File Type="RDS-RDS" Name="ddr3_clock.vds"/>
+  <File Type="RDS-DCP" Name="ddr3_clock.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ddr3_clock" RelGenDir="$PGENDIR/ddr3_clock">
+    <File Path="$PSRCDIR/sources_1/ip/ddr3_clock/ddr3_clock.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/MyFiles/Documents/Hardware-Manuals/Board/A7_Lite/04_source_code/A7_lite_demo_200T/04_demo/15_uart_img/uart_img.srcs/sources_1/ip/ddr3_clock/ddr3_clock.xci"/>
+        <Attr Name="ImportTime" Val="1663584893"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ddr3_clock"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ddr3_clock" RelGenDir="$PGENDIR/ddr3_clock">
+    <File Path="$PSRCDIR/sources_1/ip/ddr3_clock/ddr3_clock.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/MyFiles/Documents/Hardware-Manuals/Board/A7_Lite/04_source_code/A7_lite_demo_200T/04_demo/15_uart_img/uart_img.srcs/sources_1/ip/ddr3_clock/ddr3_clock.xci"/>
+        <Attr Name="ImportTime" Val="1663584893"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ddr3_clock"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

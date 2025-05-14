@@ -1,0 +1,529 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu May 15 02:29:44 2025
+| Host         : Gralerfics running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file hdmi_ddr3_uart_bus_skew_routed.rpt -pb hdmi_ddr3_uart_bus_skew_routed.pb -rpx hdmi_ddr3_uart_bus_skew_routed.rpx
+| Design       : hdmi_ddr3_uart
+| Device       : 7a200t-fbg484
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   16        [get_cells [list {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[9]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]}]]
+                                              [get_cells [list {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]]
+                                                                              Slow             10.000       0.756      9.244
+2   18        [get_cells [list {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]}]]
+                                              [get_cells [list {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]]
+                                                                              Slow             10.000       0.711      9.289
+3   20        [get_cells [list {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              6.737       0.668      6.069
+4   22        [get_cells [list {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[9]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[10]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[11]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[12]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]}]]
+                                              [get_cells [list {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][12]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]]
+                                                                              Slow              6.737       0.772      5.965
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells [list {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[9]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]}]] -to [get_cells [list {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]] 10.000
+Requirement: 10.000ns
+Endpoints: 7
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk                   clk_pll_i             ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                                                            Slow         0.756      9.244
+
+
+Slack (MET) :             9.244ns  (requirement - actual skew)
+  Endpoint Source:        <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk)
+  Endpoint Destination:   <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pll_i)
+  Reference Source:       <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk)
+  Reference Destination:  <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pll_i)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    2.530ns
+  Reference Relative Delay:   1.239ns
+  Relative CRPR:              0.536ns
+  Actual Bus Skew:            0.756ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    J19                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    J19                  IBUF (Prop_ibuf_I_O)         1.390     1.390 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.827     3.217    clk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.081     3.298 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.457     4.755    <hidden>
+    SLICE_X148Y169       FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X148Y169       FDRE (Prop_fdre_C_Q)         0.433     5.188 r  <hidden>
+                         net (fo=1, routed)           0.591     5.779    <hidden>
+    SLICE_X149Y169       FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pll_i rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y17       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.417     1.417    ddr3_clock/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.979    -1.562 r  ddr3_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.488    -0.075    ddr3_clock/inst/clk_out1_ddr3_clock
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.077     0.002 r  ddr3_clock/inst/clkout1_buf/O
+                         net (fo=63, routed)          1.403     1.405    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i_0
+    PLLE2_ADV_X1Y3       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT3)
+                                                      0.073     1.478 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3
+                         net (fo=1, routed)           1.029     2.507    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3_out
+    BUFHCE_X1Y36         BUFH (Prop_bufh_I_O)         0.069     2.576 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufh_pll_clk3/O
+                         net (fo=1, routed)           0.777     3.353    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3
+    MMCME2_ADV_X1Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKFBOUT)
+                                                     -2.912     0.442 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
+                         net (fo=1, routed)           1.452     1.894    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     1.971 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
+                         net (fo=5182, routed)        1.353     3.324    <hidden>
+    SLICE_X149Y169       FDRE                                         r  <hidden>
+                         clock pessimism              0.000     3.324    
+    SLICE_X149Y169       FDRE (Setup_fdre_C_D)       -0.075     3.249    <hidden>
+  -------------------------------------------------------------------
+                         data arrival                           5.779    
+                         clock arrival                          3.249    
+  -------------------------------------------------------------------
+                         relative delay                         2.530    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    J19                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    J19                  IBUF (Prop_ibuf_I_O)         1.324     1.324 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.734     3.058    clk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.077     3.135 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.353     4.488    <hidden>
+    SLICE_X150Y169       FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X150Y169       FDRE (Prop_fdre_C_Q)         0.347     4.835 r  <hidden>
+                         net (fo=1, routed)           0.186     5.021    <hidden>
+    SLICE_X151Y168       FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pll_i rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y17       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.520     1.520    ddr3_clock/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.156    -1.637 r  ddr3_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.559    -0.078    ddr3_clock/inst/clk_out1_ddr3_clock
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.081     0.003 r  ddr3_clock/inst/clkout1_buf/O
+                         net (fo=63, routed)          1.505     1.508    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i_0
+    PLLE2_ADV_X1Y3       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT3)
+                                                      0.077     1.585 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3
+                         net (fo=1, routed)           1.165     2.750    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3_out
+    BUFHCE_X1Y36         BUFH (Prop_bufh_I_O)         0.106     2.856 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufh_pll_clk3/O
+                         net (fo=1, routed)           0.813     3.669    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3
+    MMCME2_ADV_X1Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKFBOUT)
+                                                     -3.088     0.581 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
+                         net (fo=1, routed)           1.524     2.105    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081     2.186 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
+                         net (fo=5182, routed)        1.458     3.644    <hidden>
+    SLICE_X151Y168       FDRE                                         r  <hidden>
+                         clock pessimism              0.000     3.644    
+    SLICE_X151Y168       FDRE (Hold_fdre_C_D)         0.138     3.782    <hidden>
+  -------------------------------------------------------------------
+                         data arrival                           5.021    
+                         clock arrival                          3.782    
+  -------------------------------------------------------------------
+                         relative delay                         1.239    
+
+
+
+Id: 2
+set_bus_skew -from [get_cells [list {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]}]] -to [get_cells [list {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]] 10.000
+Requirement: 10.000ns
+Endpoints: 7
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_pll_i             clk                   ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.711      9.289
+
+
+Slack (MET) :             9.289ns  (requirement - actual skew)
+  Endpoint Source:        <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pll_i)
+  Endpoint Destination:   <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk)
+  Reference Source:       <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pll_i)
+  Reference Destination:  <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    0.166ns
+  Reference Relative Delay:  -1.092ns
+  Relative CRPR:              0.547ns
+  Actual Bus Skew:            0.711ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pll_i rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y17       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.520     1.520    ddr3_clock/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.156    -1.637 r  ddr3_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.559    -0.078    ddr3_clock/inst/clk_out1_ddr3_clock
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.081     0.003 r  ddr3_clock/inst/clkout1_buf/O
+                         net (fo=63, routed)          1.505     1.508    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i_0
+    PLLE2_ADV_X1Y3       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT3)
+                                                      0.077     1.585 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3
+                         net (fo=1, routed)           1.165     2.750    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3_out
+    BUFHCE_X1Y36         BUFH (Prop_bufh_I_O)         0.106     2.856 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufh_pll_clk3/O
+                         net (fo=1, routed)           0.813     3.669    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3
+    MMCME2_ADV_X1Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKFBOUT)
+                                                     -3.088     0.581 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
+                         net (fo=1, routed)           1.524     2.105    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081     2.186 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
+                         net (fo=5182, routed)        1.456     3.642    <hidden>
+    SLICE_X149Y170       FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X149Y170       FDRE (Prop_fdre_C_Q)         0.348     3.990 r  <hidden>
+                         net (fo=1, routed)           0.493     4.483    <hidden>
+    SLICE_X148Y171       FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    J19                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    J19                  IBUF (Prop_ibuf_I_O)         1.324     1.324 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.734     3.058    clk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.077     3.135 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.350     4.485    <hidden>
+    SLICE_X148Y171       FDRE                                         r  <hidden>
+                         clock pessimism              0.000     4.485    
+    SLICE_X148Y171       FDRE (Setup_fdre_C_D)       -0.168     4.317    <hidden>
+  -------------------------------------------------------------------
+                         data arrival                           4.483    
+                         clock arrival                          4.317    
+  -------------------------------------------------------------------
+                         relative delay                         0.166    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pll_i rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y17       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.417     1.417    ddr3_clock/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.979    -1.562 r  ddr3_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.488    -0.075    ddr3_clock/inst/clk_out1_ddr3_clock
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.077     0.002 r  ddr3_clock/inst/clkout1_buf/O
+                         net (fo=63, routed)          1.403     1.405    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i_0
+    PLLE2_ADV_X1Y3       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT3)
+                                                      0.073     1.478 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3
+                         net (fo=1, routed)           1.029     2.507    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3_out
+    BUFHCE_X1Y36         BUFH (Prop_bufh_I_O)         0.069     2.576 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufh_pll_clk3/O
+                         net (fo=1, routed)           0.777     3.353    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3
+    MMCME2_ADV_X1Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKFBOUT)
+                                                     -2.912     0.442 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
+                         net (fo=1, routed)           1.452     1.894    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     1.971 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
+                         net (fo=5182, routed)        1.352     3.323    <hidden>
+    SLICE_X149Y170       FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X149Y170       FDRE (Prop_fdre_C_Q)         0.304     3.627 r  <hidden>
+                         net (fo=1, routed)           0.224     3.851    <hidden>
+    SLICE_X146Y171       FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    J19                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    J19                  IBUF (Prop_ibuf_I_O)         1.390     1.390 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.827     3.217    clk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.081     3.298 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.454     4.752    <hidden>
+    SLICE_X146Y171       FDRE                                         r  <hidden>
+                         clock pessimism              0.000     4.752    
+    SLICE_X146Y171       FDRE (Hold_fdre_C_D)         0.191     4.943    <hidden>
+  -------------------------------------------------------------------
+                         data arrival                           3.851    
+                         clock arrival                          4.943    
+  -------------------------------------------------------------------
+                         relative delay                        -1.092    
+
+
+
+Id: 3
+set_bus_skew -from [get_cells [list {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 6.737
+Requirement: 6.737ns
+Endpoints: 10
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_pll_i             clk_out1_clock        ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/D
+                                                                            ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.668      6.069
+
+
+Slack (MET) :             6.069ns  (requirement - actual skew)
+  Endpoint Source:        <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pll_i)
+  Endpoint Destination:   <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock)
+  Reference Source:       <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pll_i)
+  Reference Destination:  <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            6.737ns
+  Endpoint Relative Delay:    3.328ns
+  Reference Relative Delay:   2.279ns
+  Relative CRPR:              0.380ns
+  Actual Bus Skew:            0.668ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pll_i rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y17       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.520     1.520    ddr3_clock/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.156    -1.637 r  ddr3_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.559    -0.078    ddr3_clock/inst/clk_out1_ddr3_clock
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.081     0.003 r  ddr3_clock/inst/clkout1_buf/O
+                         net (fo=63, routed)          1.505     1.508    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i_0
+    PLLE2_ADV_X1Y3       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT3)
+                                                      0.077     1.585 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3
+                         net (fo=1, routed)           1.165     2.750    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3_out
+    BUFHCE_X1Y36         BUFH (Prop_bufh_I_O)         0.106     2.856 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufh_pll_clk3/O
+                         net (fo=1, routed)           0.813     3.669    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3
+    MMCME2_ADV_X1Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKFBOUT)
+                                                     -3.088     0.581 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
+                         net (fo=1, routed)           1.524     2.105    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081     2.186 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
+                         net (fo=5182, routed)        1.371     3.557    <hidden>
+    SLICE_X74Y183        FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X74Y183        FDRE (Prop_fdre_C_Q)         0.398     3.955 r  <hidden>
+                         net (fo=1, routed)           0.485     4.441    <hidden>
+    SLICE_X70Y183        FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y17       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.689     1.689    hdmi_clock/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.944    -2.255 r  hdmi_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.180    -0.075    hdmi_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077     0.002 r  hdmi_clock/inst/clkout1_buf/O
+                         net (fo=272, routed)         1.270     1.272    <hidden>
+    SLICE_X70Y183        FDRE                                         r  <hidden>
+                         clock pessimism              0.000     1.272    
+    SLICE_X70Y183        FDRE (Setup_fdre_C_D)       -0.159     1.113    <hidden>
+  -------------------------------------------------------------------
+                         data arrival                           4.441    
+                         clock arrival                          1.113    
+  -------------------------------------------------------------------
+                         relative delay                         3.328    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pll_i rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y17       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.417     1.417    ddr3_clock/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.979    -1.562 r  ddr3_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.488    -0.075    ddr3_clock/inst/clk_out1_ddr3_clock
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.077     0.002 r  ddr3_clock/inst/clkout1_buf/O
+                         net (fo=63, routed)          1.403     1.405    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i_0
+    PLLE2_ADV_X1Y3       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT3)
+                                                      0.073     1.478 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3
+                         net (fo=1, routed)           1.029     2.507    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3_out
+    BUFHCE_X1Y36         BUFH (Prop_bufh_I_O)         0.069     2.576 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufh_pll_clk3/O
+                         net (fo=1, routed)           0.777     3.353    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3
+    MMCME2_ADV_X1Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKFBOUT)
+                                                     -2.912     0.442 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
+                         net (fo=1, routed)           1.452     1.894    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     1.971 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
+                         net (fo=5182, routed)        1.262     3.233    <hidden>
+    SLICE_X75Y180        FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X75Y180        FDRE (Prop_fdre_C_Q)         0.304     3.537 r  <hidden>
+                         net (fo=1, routed)           0.311     3.848    <hidden>
+    SLICE_X72Y180        FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y17       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.807     1.807    hdmi_clock/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -4.175    -2.368 r  hdmi_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.290    -0.078    hdmi_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.081     0.003 r  hdmi_clock/inst/clkout1_buf/O
+                         net (fo=272, routed)         1.375     1.378    <hidden>
+    SLICE_X72Y180        FDRE                                         r  <hidden>
+                         clock pessimism              0.000     1.378    
+    SLICE_X72Y180        FDRE (Hold_fdre_C_D)         0.191     1.569    <hidden>
+  -------------------------------------------------------------------
+                         data arrival                           3.848    
+                         clock arrival                          1.569    
+  -------------------------------------------------------------------
+                         relative delay                         2.279    
+
+
+
+Id: 4
+set_bus_skew -from [get_cells [list {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[9]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[10]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[11]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[12]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]}]] -to [get_cells [list {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][12]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]}]] 6.737
+Requirement: 6.737ns
+Endpoints: 10
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_clock        clk_pll_i             ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+                                                                            ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                                                            Slow         0.772      5.965
+
+
+Slack (MET) :             5.965ns  (requirement - actual skew)
+  Endpoint Source:        <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock)
+  Endpoint Destination:   <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pll_i)
+  Reference Source:       <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clock)
+  Reference Destination:  <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pll_i)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            6.737ns
+  Endpoint Relative Delay:   -0.758ns
+  Reference Relative Delay:  -1.935ns
+  Relative CRPR:              0.404ns
+  Actual Bus Skew:            0.772ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y17       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.807     1.807    hdmi_clock/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -4.175    -2.368 r  hdmi_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.290    -0.078    hdmi_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.081     0.003 r  hdmi_clock/inst/clkout1_buf/O
+                         net (fo=272, routed)         1.371     1.374    <hidden>
+    SLICE_X74Y180        FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X74Y180        FDRE (Prop_fdre_C_Q)         0.398     1.772 r  <hidden>
+                         net (fo=1, routed)           0.501     2.273    <hidden>
+    SLICE_X75Y180        FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pll_i rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y17       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.417     1.417    ddr3_clock/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.979    -1.562 r  ddr3_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.488    -0.075    ddr3_clock/inst/clk_out1_ddr3_clock
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.077     0.002 r  ddr3_clock/inst/clkout1_buf/O
+                         net (fo=63, routed)          1.403     1.405    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i_0
+    PLLE2_ADV_X1Y3       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT3)
+                                                      0.073     1.478 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3
+                         net (fo=1, routed)           1.029     2.507    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3_out
+    BUFHCE_X1Y36         BUFH (Prop_bufh_I_O)         0.069     2.576 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufh_pll_clk3/O
+                         net (fo=1, routed)           0.777     3.353    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3
+    MMCME2_ADV_X1Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKFBOUT)
+                                                     -2.912     0.442 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
+                         net (fo=1, routed)           1.452     1.894    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     1.971 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
+                         net (fo=5182, routed)        1.262     3.233    <hidden>
+    SLICE_X75Y180        FDRE                                         r  <hidden>
+                         clock pessimism              0.000     3.233    
+    SLICE_X75Y180        FDRE (Setup_fdre_C_D)       -0.202     3.031    <hidden>
+  -------------------------------------------------------------------
+                         data arrival                           2.273    
+                         clock arrival                          3.031    
+  -------------------------------------------------------------------
+                         relative delay                        -0.758    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clock rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y17       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.689     1.689    hdmi_clock/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.944    -2.255 r  hdmi_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.180    -0.075    hdmi_clock/inst/clk_out1_clock
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077     0.002 r  hdmi_clock/inst/clkout1_buf/O
+                         net (fo=272, routed)         1.264     1.266    <hidden>
+    SLICE_X74Y180        FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X74Y180        FDRE (Prop_fdre_C_Q)         0.347     1.613 r  <hidden>
+                         net (fo=1, routed)           0.197     1.810    <hidden>
+    SLICE_X74Y179        FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pll_i rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y17       BUFG                         0.000     0.000 r  clk_IBUF_BUFG_inst/O
+                         net (fo=2516, routed)        1.520     1.520    ddr3_clock/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.156    -1.637 r  ddr3_clock/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.559    -0.078    ddr3_clock/inst/clk_out1_ddr3_clock
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.081     0.003 r  ddr3_clock/inst/clkout1_buf/O
+                         net (fo=63, routed)          1.505     1.508    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i_0
+    PLLE2_ADV_X1Y3       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT3)
+                                                      0.077     1.585 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3
+                         net (fo=1, routed)           1.165     2.750    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3_out
+    BUFHCE_X1Y36         BUFH (Prop_bufh_I_O)         0.106     2.856 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufh_pll_clk3/O
+                         net (fo=1, routed)           0.813     3.669    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/pll_clk3
+    MMCME2_ADV_X1Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKFBOUT)
+                                                     -3.088     0.581 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
+                         net (fo=1, routed)           1.524     2.105    ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/clk_pll_i
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081     2.186 r  ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
+                         net (fo=5182, routed)        1.367     3.553    <hidden>
+    SLICE_X74Y179        FDRE                                         r  <hidden>
+                         clock pessimism              0.000     3.553    
+    SLICE_X74Y179        FDRE (Hold_fdre_C_D)         0.191     3.744    <hidden>
+  -------------------------------------------------------------------
+                         data arrival                           1.810    
+                         clock arrival                          3.744    
+  -------------------------------------------------------------------
+                         relative delay                        -1.935    
+
+
+

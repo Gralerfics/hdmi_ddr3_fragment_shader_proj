@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "../../../ipstatic" \
+"../../../../hdmi_ddr3_fragment_shader_proj.gen/sources_1/ip/clock_distribution/clock_distribution_clk_wiz.v" \
+"../../../../hdmi_ddr3_fragment_shader_proj.gen/sources_1/ip/clock_distribution/clock_distribution.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

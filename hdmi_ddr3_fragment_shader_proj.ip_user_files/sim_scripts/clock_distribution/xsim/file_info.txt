@@ -1,0 +1,3 @@
+clock_distribution_clk_wiz.v,verilog,xil_defaultlib,../../../../hdmi_ddr3_fragment_shader_proj.gen/sources_1/ip/clock_distribution/clock_distribution_clk_wiz.v,incdir="../../../ipstatic"incdir="../../../ipstatic"
+clock_distribution.v,verilog,xil_defaultlib,../../../../hdmi_ddr3_fragment_shader_proj.gen/sources_1/ip/clock_distribution/clock_distribution.v,incdir="../../../ipstatic"incdir="../../../ipstatic"
+glbl.v,Verilog,xil_defaultlib,glbl.v
