@@ -2,7 +2,7 @@
 
 A Vivado project for hardware shader tests with DDR3 double buffering (RGB565) and HDMI output. It is modified from MicroPhase A7Lite examples.
 
-The HDL code in `<src>/new/shader` should be a pipelined shader circuit. Currently in it is an example automatically generated and pipelined by [NodalHDL](https://github.com/Gralerfics/nodalhdl). An GIF for the result:
+The HDL code in `<src>/new/shader` should be a pipelined shader circuit. Currently in it is an example automatically generated and pipelined by [NodalHDL](https://github.com/Gralerfics/nodalhdl) (temporarily private). An GIF for the result:
 
 ![Pretty Hip](doc/pretty_hip_example.gif)
 
@@ -55,6 +55,19 @@ void mainImage(out vec4 O, vec2 u) {
 **Code 2**
 
 ```python
+from nodalhdl.core.signal import *
+from nodalhdl.core.structure import *
+from nodalhdl.basic.bits import *
+from nodalhdl.basic.arith import *
+
+from nodalhdl.core.hdl import *
+from nodalhdl.timing.sta import *
+from nodalhdl.timing.pipelining import *
+
+
+T = SFixedPoint[16, 12] # 目前要求 W_int <= 45 且 8 <= W_frac <= 20
+
+
 def Shader() -> Structure:
     s = Structure()
 
@@ -73,25 +86,25 @@ def Shader() -> Structure:
         u = s.add_substructure(f"arith_shifter_{UID}", CustomVHDLOperator(
             {"i": T},
             {"o": T},
-            f"o <= std_logic_vector({"shift_left" if n >= 0 else "shift_right"}(signed(i), {abs(n)}));"
-        ))
+            f"o <= std_logic_vector({"shift_left" if n >= 0 else "shift_right"}(signed(i), {abs(n)}));",
+            _unique_name = f"ArithShifter_{str(n).replace("-", "NEG")}_{T}"
+        )) # 
         s.connect(i, u.IO.i)
         return u.IO.o
     
     @builder
     def TFract(i: Node):
-        # u = s.add_substructure(f"fract_{i.full_name}_{UID}", CustomVHDLOperator(
         u = s.add_substructure(f"fract_{UID}", CustomVHDLOperator(
             {"i": T},
             {"o": T},
-            f"o <= (o'high downto {T.W_frac} => '0') & i({T.W_frac - 1} downto 0);"
+            f"o <= (o'high downto {T.W_frac} => '0') & i({T.W_frac - 1} downto 0);",
+            _unique_name = f"Fract_{T}"
         ))
         s.connect(i, u.IO.i)
         return u.IO.o
     
     @builder
     def TAddition(a: Node, b: Node):
-        # u = s.add_substructure(f"addition_{a.full_name}_{b.full_name}_{UID}", Add(T, T))
         u = s.add_substructure(f"addition_{UID}", Add(T, T))
         s.connect(a, u.IO.a)
         s.connect(b, u.IO.b)
@@ -99,7 +112,6 @@ def Shader() -> Structure:
     
     @builder
     def TSubtraction(a: Node, b: Node):
-        # u = s.add_substructure(f"subtraction_{a.full_name}_{b.full_name}_{UID}", Subtract(T, T))
         u = s.add_substructure(f"subtraction_{UID}", Subtract(T, T))
         s.connect(a, u.IO.a)
         s.connect(b, u.IO.b)
@@ -107,7 +119,6 @@ def Shader() -> Structure:
     
     @builder
     def TMultiplication(a: Node, b: Node):
-        # u = s.add_substructure(f"multiplication_{a.full_name}_{b.full_name}_{UID}", Multiply(T, T))
         u = s.add_substructure(f"multiplication_{UID}", Multiply(T, T))
         s.connect(a, u.IO.a)
         s.connect(b, u.IO.b)
@@ -115,11 +126,11 @@ def Shader() -> Structure:
     
     @builder
     def TMin(a: Node, b: Node):
-        # u = s.add_substructure(f"min_{a.full_name}_{b.full_name}_{UID}", CustomVHDLOperator(
         u = s.add_substructure(f"min_{UID}", CustomVHDLOperator(
             {"a": T, "b": T},
             {"o": T},
-            f"o <= a when signed(a) < signed(b) else b;"
+            f"o <= a when signed(a) < signed(b) else b;",
+            _unique_name = f"Min_{T}_{T}"
         ))
         s.connect(a, u.IO.a)
         s.connect(b, u.IO.b)
@@ -127,38 +138,38 @@ def Shader() -> Structure:
     
     @builder
     def TMinPositiveXAndOneMinusX(i: Node):
-        # u = s.add_substructure(f"minx1mx_{i.full_name}_{UID}", CustomVHDLOperator(
         u = s.add_substructure(f"minx1mx_{UID}", CustomVHDLOperator(
             {"i": T},
             {"o": T},
-            f"o <= i when unsigned(i) < to_unsigned({1 << (T.W_frac - 1)}, {T.W}) else std_logic_vector(to_unsigned({1 << T.W_frac}, {T.W}) - unsigned(i));"
+            f"o <= i when unsigned(i) < to_unsigned({1 << (T.W_frac - 1)}, {T.W}) else std_logic_vector(to_unsigned({1 << T.W_frac}, {T.W}) - unsigned(i));",
+            _unique_name = f"MinPositiveXandOneMinusX_{T}"
         ))
         s.connect(i, u.IO.i)
         return u.IO.o
     
     @builder
     def TCeil(i: Node):
-        # u = s.add_substructure(f"ceil_{i.full_name}_{UID}", CustomVHDLOperator(
         u = s.add_substructure(f"ceil_{UID}", CustomVHDLOperator(
             {"i": T},
             {"o": T},
             f"o({T.W_frac - 1} downto 0) <= (others => '0');\n" +
                 f"plus_one <= std_logic_vector(unsigned(i) + to_unsigned({1 << T.W_frac}, {T.W}));" +
                 f"o(o'high downto {T.W_frac}) <= i(i'high downto {T.W_frac}) when i({T.W_frac - 1} downto 0) = ({T.W_frac - 1} downto 0 => '0') else plus_one(o'high downto {T.W_frac});",
-            f"signal plus_one: std_logic_vector({T.W} - 1 downto 0);"
+            f"signal plus_one: std_logic_vector({T.W} - 1 downto 0);",
+            _unique_name = f"Ceil_{T}"
         ))
         s.connect(i, u.IO.i)
         return u.IO.o
     
     @builder
-    def TClampZeroToOne(i: Node): # notice that it should be [0.0, 1.0)
-        # u = s.add_substructure(f"clamp01_{i.full_name}_{UID}", CustomVHDLOperator(
+    def TClampZeroToOne(i: Node): # 注意是 [0.0, 1.0), 以确保转八位时没有问题
         u = s.add_substructure(f"clamp01_{UID}", CustomVHDLOperator(
             {"i": T},
             {"o": T},
             f"o <= (others => '0') when i(i'high) = '1' else\n" +
             f"     (i'high downto {T.W_frac} => '0', others => '1') when i(i'high downto {T.W_frac}) /= (i'high downto {T.W_frac} => '0') else\n" +
-            f"     (i'high downto {T.W_frac} => '0') & i({T.W_frac - 1} downto 0);"
+            f"     (i'high downto {T.W_frac} => '0') & i({T.W_frac - 1} downto 0);",
+            _unique_name = f"Clamp0To1_{T}"
         ))
         s.connect(i, u.IO.i)
         return u.IO.o
@@ -170,7 +181,8 @@ def Shader() -> Structure:
             {"o": T},
             f"o({T.W_frac + 11} downto {T.W_frac}) <= i;\n" +
                 f"o({T.W - 1} downto {T.W_frac + 12}) <= (others => '0');\n" +
-                f"o({T.W_frac - 1} downto 0) <= (others => '0');"
+                f"o({T.W_frac - 1} downto 0) <= (others => '0');",
+            _unique_name = f"FragCoordValueConvertor_UInt_12_{T}"
         ))
         s.connect(i, u.IO.i)
         return u.IO.o
@@ -180,7 +192,8 @@ def Shader() -> Structure:
         u = s.add_substructure(f"itime_convertor_{UID}", CustomVHDLOperator(
             {"i": UInt[64]},
             {"o": T},
-            f"o <= '0' & i({20 + T.W_int - 1} downto {20 - T.W_frac});" # TODO f"o <= '0' & i({min(20 + T.W_int - 2, 63)} downto {max(20 - T.W_frac, 0)});"
+            f"o <= '0' & i({20 + T.W_int - 1} downto {20 - T.W_frac});",
+            _unique_name = f"ITimeConvertor_UInt_64_{T}"
         ))
         s.connect(i, u.IO.i)
         return u.IO.o
@@ -190,7 +203,8 @@ def Shader() -> Structure:
         u = s.add_substructure(f"to8bit_cvt_{UID}", CustomVHDLOperator(
             {"i_clamped": T},
             {"o": Bits[8]},
-            f"o <= i_clamped({T.W_frac - 1} downto {T.W_frac - 8});"
+            f"o <= i_clamped({T.W_frac - 1} downto {T.W_frac - 8});",
+            _unique_name = f"To8bitConvertor_{T}"
         ))
         s.connect(TClampZeroToOne(i), u.IO.i_clamped)
         return u.IO.o
@@ -200,12 +214,15 @@ def Shader() -> Structure:
         u = s.add_substructure("color_24bit_cvt", CustomVHDLOperator(
             {"r": Bits[8], "g": Bits[8], "b": Bits[8]},
             {"o": Bits[24]},
-            "o <= r & g & b;"
+            "o <= r & g & b;",
+            _unique_name = f"Concatenate_Bits_8_Bits_8_Bits_8"
         ))
         s.connect(r, u.IO.r)
         s.connect(g, u.IO.g)
         s.connect(b, u.IO.b)
         return u.IO.o
+    
+    # ============================================================================================================== #
     
     # ports
     iTime_us = s.add_port("itime_us", Input[UInt[64]])
@@ -289,5 +306,37 @@ def Shader() -> Structure:
     s.connect(Concatenate888(r, g, b), fragColor_24bit)
     
     return s
+
+
+# construct
+shader = Shader()
+
+
+# expand
+shader.singletonize()
+shader.expand()
+rid = RuntimeId.create()
+shader.deduction(rid)
+print(shader.runtime_info(rid))
+
+
+# STA
+sta = VivadoSTA(part_name = "xc7a200tfbg484-1", temporary_workspace_path = ".vivado_sta_shader", vivado_executable_path = "vivado.bat")
+sta.analyse(shader, rid)
+# sta.analyse(shader, rid, skip_emitting_and_script_running = True)
+
+
+# pipelining
+levels, Phi_Gr = pipelining(shader, rid, 24, model = "simple") # , model = "extended")
+print("Phi_Gr", Phi_Gr)
+
+
+# generation
+model = shader.generation(rid, top_module_name = "shader")
+insert_ready_valid_chain(model, levels)
+
+
+# emit
+emit_to_files(model.emit_vhdl(), "C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader")
 ```
 

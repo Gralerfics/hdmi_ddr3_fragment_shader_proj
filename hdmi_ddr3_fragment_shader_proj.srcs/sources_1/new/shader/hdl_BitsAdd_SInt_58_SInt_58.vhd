@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+use work.types.all;
 
 entity BitsAdd_SInt_58_SInt_58 is
     port (
@@ -10,7 +11,8 @@ entity BitsAdd_SInt_58_SInt_58 is
     );
 end entity;
 
-architecture Behavioral of BitsAdd_SInt_58_SInt_58 is
+architecture structural of BitsAdd_SInt_58_SInt_58 is
+    -- no declarations
 begin
     r <= std_logic_vector(unsigned(a) + unsigned(b));
 end architecture;

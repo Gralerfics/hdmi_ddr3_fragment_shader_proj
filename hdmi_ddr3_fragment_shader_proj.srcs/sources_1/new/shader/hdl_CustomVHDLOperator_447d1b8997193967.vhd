@@ -11,7 +11,7 @@ entity CustomVHDLOperator_447d1b8997193967 is
     );
 end entity;
 
-architecture Behavioral of CustomVHDLOperator_447d1b8997193967 is
+architecture structural of CustomVHDLOperator_447d1b8997193967 is
     -- no declarations
 begin
     o <= vv when ee(ee'high) = '1' else std_logic_vector(to_unsigned(4096, 29) - unsigned(vv));

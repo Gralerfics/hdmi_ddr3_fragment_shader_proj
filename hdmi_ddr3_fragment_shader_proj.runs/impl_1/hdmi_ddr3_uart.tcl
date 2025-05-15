@@ -97,6 +97,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 
@@ -107,9 +108,8 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 6
-  set_param synth.incrementalSynthesisCache C:/Workspace/hdmi_ddr3_fragment_shader_proj/.Xil/Vivado-36580-Gralerfics/incrSyn
+  set_param synth.incrementalSynthesisCache C:/Workspace/hdmi_ddr3_fragment_shader_proj/.Xil/Vivado-27088-Gralerfics/incrSyn
   set_param checkpoint.writeSynthRtdsInDcp 1
-  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 24  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a200tfbg484-2

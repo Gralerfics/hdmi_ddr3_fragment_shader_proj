@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+use work.types.all;
 
 entity BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12 is
     port (
@@ -10,7 +11,8 @@ entity BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12 is
     );
 end entity;
 
-architecture Behavioral of BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12 is
+architecture structural of BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12 is
+    -- no declarations
 begin
     r <= std_logic_vector(unsigned(a) + unsigned(b));
 end architecture;
