@@ -5,11 +5,11 @@ SW Build: 5239630 on Fri Nov 08 22:35:27 MST 2024
 IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
 IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
 
-Process ID (PID): 29624
+Process ID (PID): 10600
 License: Customer
 Mode: GUI Mode
 
-Current time: 	Sun May 18 09:34:07 CST 2025
+Current time: 	Sun May 18 13:03:07 CST 2025
 Time zone: 	China Standard Time (Asia/Shanghai)
 
 OS: Windows 11
@@ -52,13 +52,13 @@ Vivado layouts directory: C:/Users/glver/AppData/Roaming/Xilinx/Vivado/2024.2/da
 PlanAhead jar file: 	D:/Xilinx/Vivado/2024.2/lib/classes/planAhead.jar
 Vivado log file: 	C:/Workspace/hdmi_ddr3_fragment_shader_proj/vivado.log
 Vivado journal file: 	C:/Workspace/hdmi_ddr3_fragment_shader_proj/vivado.jou
-Engine tmp dir: 	C:/Workspace/hdmi_ddr3_fragment_shader_proj/.Xil/Vivado-29624-Gralerfics
+Engine tmp dir: 	C:/Workspace/hdmi_ddr3_fragment_shader_proj/.Xil/Vivado-10600-Gralerfics
 Non-Default Parameters:	[]
 
 Xilinx & AMD Environment Variables
 --------------------------------------------------------------------------------------------
 RDI_APPROOT: D:/Xilinx/Vivado/2024.2
-RDI_ARGS:  -gui_launcher_event rodinguilauncherevent3316 "C:\Workspace\hdmi_ddr3_fragment_shader_proj\hdmi_ddr3_fragment_shader_proj.xpr"
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent36644 "C:\Workspace\hdmi_ddr3_fragment_shader_proj\hdmi_ddr3_fragment_shader_proj.xpr"
 RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
 RDI_BASEROOT: D:/Xilinx/Vivado
 RDI_BINDIR: D:/Xilinx/Vivado/2024.2/bin
@@ -86,7 +86,7 @@ RDI_PYTHON3_VERSION: 3.8.3
 RDI_PYTHONHOME: D:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3
 RDI_PYTHONPATH: D:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3;D:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3\bin;D:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3\lib;D:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3\lib\site-packages
 RDI_PYTHON_LD_LIBPATH: D:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3\lib
-RDI_SESSION_INFO: C:\Workspace\hdmi_ddr3_fragment_shader_proj:GRALERFICS-2025-05-18周日_9-33-30.92
+RDI_SESSION_INFO: C:\Workspace\hdmi_ddr3_fragment_shader_proj:GRALERFICS-2025-05-18周日_13-02-39.28
 RDI_SHARED_DATA: D:/Xilinx/SharedData/2024.2/data
 RDI_TPS_ROOT: D:/Xilinx/Vivado/2024.2/tps/win64
 RDI_USE_JDK21: True
@@ -104,7 +104,7 @@ _RDI_CWD: C:\Workspace\hdmi_ddr3_fragment_shader_proj
 
 GUI allocated memory:	512 MB
 GUI max memory:		4,072 MB
-Engine allocated memory: 938 MB
+Engine allocated memory: 922 MB
 
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
@@ -112,6 +112,7 @@ Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 */
 
 // TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
 // Tcl Message: start_gui 
 // TclEventType: PROJECT_OPEN_DIALOG
 // Opening Vivado Project: C:\Workspace\hdmi_ddr3_fragment_shader_proj\hdmi_ddr3_fragment_shader_proj.xpr. Version: Vivado v2024.2 
@@ -156,12 +157,11 @@ Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // TclEventType: IP_LOCK_CHANGE
 // TclEventType: COMPOSITE_FILE_CHANGE
 // TclEventType: PROJECT_NEW
-// [GUI Memory]: 108 MB (+110638kb) [00:00:18]
-// [Engine Memory]: 865 MB (+755153kb) [00:00:18]
-// [GUI Memory]: 130 MB (+17476kb) [00:00:19]
-// [Engine Memory]: 919 MB (+11171kb) [00:00:19]
-// WARNING: HEventQueue.dispatchEvent() is taking  2166 ms.
+// [GUI Memory]: 106 MB (+108219kb) [00:00:16]
+// [Engine Memory]: 865 MB (+755677kb) [00:00:16]
+// [GUI Memory]: 128 MB (+17693kb) [00:00:17]
+// [Engine Memory]: 918 MB (+9867kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  2363 ms.
 // Tcl Message: open_project C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.xpr 
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'. 
-// [GUI Memory]: 168 MB (+33326kb) [00:00:20]

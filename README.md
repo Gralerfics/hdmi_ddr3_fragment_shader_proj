@@ -2,7 +2,7 @@
 
 A Vivado project for hardware shader tests with DDR3 double buffering (RGB565) and HDMI output. It is modified from MicroPhase A7Lite examples.
 
-The HDL code in `<src>/new/shader` should be a pipelined shader circuit. Currently in it is an example automatically generated and pipelined by [NodalHDL](https://github.com/Gralerfics/nodalhdl) (temporarily private). An GIF for the result:
+The HDL code in `<src>/new/shader` should be a pipelined shader circuit. Currently in it is an example automatically generated and pipelined by [NodalHDL](https://github.com/Gralerfics/nodalhdl). An GIF for the result:
 
 ![Pretty Hip](doc/pretty_hip_example.gif)
 
