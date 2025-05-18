@@ -56,11 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param synth.incrementalSynthesisCache C:/Workspace/hdmi_ddr3_fragment_shader_proj/.Xil/Vivado-27088-Gralerfics/incrSyn
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config -id {HDL 9-1061} -limit 100000
+set_msg_config -id {HDL 9-1654} -limit 100000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tfbg484-2
 
@@ -99,31 +96,43 @@ read_verilog -library xil_defaultlib {
 }
 read_vhdl -library xil_defaultlib {
   C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/types.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_1_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_2_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_4_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG1_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG2_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG3_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG7_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG9_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BinaryMultiplexer_SFixedPoint_16_12.vhd
   C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd
   C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SInt_58_SInt_58.vhd
   C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Ceil_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Clamp0To1_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Concatenate_Bits_8_Bits_8_Bits_8.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_ba508eb47443af17_Core.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_CustomVHDLOperator_447d1b8997193967.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Concatenate_Bits_16_Bits_8.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Concatenate_UFixedPoint_8_0_UFixedPoint_8_0.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_13749133a7754138_Core.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_22096c00982b9179_Core.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_31fa47991dc69fb6_Core.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_6b991d5b30977123_Core.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_99e998fd468424c7_Core.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_de92917d4133a7ee_Core.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_e22224e03e3e720f_Core.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_e3cfae0963b7234f_Core.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_ed453308e8a82f66_Core.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_SFixedPoint_16_12_UFixedPoint_8_0.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_SFixedPoint_36_12_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_UInt_12_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_UInt_64_SFixedPoint_36_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd
   C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Fract_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_FragCoordValueConvertor_UInt_12_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ITimeConvertor_UInt_64_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_MinPositiveXandOneMinusX_SFixedPoint_16_12.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Min_SFixedPoint_16_12_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Max_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Min_SFixedPoint_16_12.vhd
   C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator.vhd
   C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SInt_29_SInt_29_AddendsGenerator.vhd
-  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_To8bitConvertor_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_1_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_2_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_4_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_8_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg1_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg20_SFixedPoint_36_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg2_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg3_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg7_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg9_SFixedPoint_16_12.vhd
+  C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Slice_28.vhd
   C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd
 }
 read_ip -quiet C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/ip/mig_ddr3/mig_ddr3.xci

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Fri May 16 03:39:53 2025
+| Date             : Sun May 18 09:37:12 2025
 | Host             : Gralerfics running 64-bit major release  (build 9200)
 | Command          : report_power -file hdmi_ddr3_uart_power_routed.rpt -pb hdmi_ddr3_uart_power_summary_routed.pb -rpx hdmi_ddr3_uart_power_routed.rpx
 | Design           : hdmi_ddr3_uart
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 1.203        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.052        |
+| Dynamic (W)              | 1.053        |
 | Device Static (W)        | 0.150        |
 | Effective TJA (C/W)      | 2.5          |
 | Max Ambient (C)          | 82.0         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.046 |       28 |       --- |             --- |
-| Slice Logic              |     0.018 |    17164 |       --- |             --- |
-|   LUT as Logic           |     0.015 |     6319 |    133800 |            4.72 |
-|   CARRY4                 |     0.001 |      652 |     33450 |            1.95 |
-|   Register               |     0.001 |     7098 |    267600 |            2.65 |
+| Slice Logic              |     0.018 |    17743 |       --- |             --- |
+|   LUT as Logic           |     0.015 |     6506 |    133800 |            4.86 |
+|   CARRY4                 |     0.001 |      685 |     33450 |            2.05 |
+|   Register               |     0.001 |     7337 |    267600 |            2.74 |
 |   LUT as Distributed RAM |    <0.001 |      384 |     46200 |            0.83 |
-|   LUT as Shift Register  |    <0.001 |       78 |     46200 |            0.17 |
+|   LUT as Shift Register  |    <0.001 |      112 |     46200 |            0.24 |
 |   F7/F8 Muxes            |    <0.001 |        4 |    133800 |           <0.01 |
-|   Others                 |     0.000 |      395 |       --- |             --- |
-| Signals                  |     0.018 |    12494 |       --- |             --- |
-| Block RAM                |     0.006 |        6 |       365 |            1.64 |
+|   Others                 |     0.000 |      384 |       --- |             --- |
+| Signals                  |     0.018 |    12638 |       --- |             --- |
+| Block RAM                |     0.007 |        6 |       365 |            1.64 |
 | MMCM                     |     0.307 |        3 |        10 |           30.00 |
 | PLL                      |     0.092 |        1 |        10 |           10.00 |
 | I/O                      |     0.426 |       60 |       285 |           21.05 |
@@ -79,8 +79,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.169 |       0.135 |      0.034 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.362 |       0.331 |      0.031 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.169 |       0.136 |      0.034 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.361 |       0.331 |      0.031 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.045 |       0.040 |      0.005 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -172,15 +172,15 @@ Table of Contents
 +-----------------------------------+-----------+
 | Name                              | Power (W) |
 +-----------------------------------+-----------+
-| hdmi_ddr3_uart                    |     1.052 |
+| hdmi_ddr3_uart                    |     1.053 |
 |   ddr3_clock                      |     0.106 |
 |     inst                          |     0.106 |
-|   ddr3_ctrl                       |     0.670 |
+|   ddr3_ctrl                       |     0.669 |
 |     u_mig_ddr3                    |     0.669 |
 |       u_mig_ddr3_mig              |     0.666 |
 |   ddr3_rx_buffer                  |     0.009 |
-|     ddr3_rx_fifo                  |     0.008 |
-|       U0                          |     0.008 |
+|     ddr3_rx_fifo                  |     0.009 |
+|       U0                          |     0.009 |
 |   ddr3_tx_buffer                  |     0.003 |
 |     ddr3_tx_fifo                  |     0.003 |
 |       U0                          |     0.003 |
@@ -193,7 +193,6 @@ Table of Contents
 |       parallel_to_serial_chn_b    |     0.035 |
 |       parallel_to_serial_chn_g    |     0.034 |
 |       parallel_to_serial_chn_r    |     0.034 |
-|     u_vga_driver                  |     0.001 |
 +-----------------------------------+-----------+
 
 

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri May 16 03:39:49 2025
+| Date         : Sun May 18 09:37:08 2025
 | Host         : Gralerfics running 64-bit major release  (build 9200)
 | Command      : report_methodology -file hdmi_ddr3_uart_methodology_drc_routed.rpt -pb hdmi_ddr3_uart_methodology_drc_routed.pb -rpx hdmi_ddr3_uart_methodology_drc_routed.rpx
 | Design       : hdmi_ddr3_uart
@@ -111,252 +111,252 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X50Y175 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X54Y173 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X46Y172 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X53Y171 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X47Y172 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X55Y173 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X47Y177 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X53Y175 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X46Y174 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X51Y173 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X49Y176 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X51Y175 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X49Y174 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X52Y174 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X48Y175 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X52Y176 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X46Y176 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X53Y173 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X44Y174 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X50Y171 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X47Y175 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X52Y171 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X48Y173 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+The FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X50Y173 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_ctrl/u_mig_ddr3/u_mig_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#13 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X145Y169 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X152Y170 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell ddr3_rx_buffer/ddr3_rx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#14 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X80Y178 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X72Y176 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell ddr3_tx_buffer/ddr3_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -4.179 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/din_q_reg[6]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.358 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/din_q_reg[6]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -4.200 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/din_q_reg[4]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.360 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/din_q_reg[6]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -4.205 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/n1d_reg[0]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.365 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/din_q_reg[4]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -4.221 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/din_q_reg[7]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.366 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/din_q_reg[2]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -4.223 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/din_q_reg[6]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.366 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/din_q_reg[6]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -4.304 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/din_q_reg[6]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.368 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/din_q_reg[7]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -4.309 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/n1d_reg[0]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.377 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/din_q_reg[7]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -4.321 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/din_q_reg[5]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.379 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/n1d_reg[0]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -4.345 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/din_q_reg[2]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.432 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/n1d_reg[0]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -4.377 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/din_q_reg[7]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.442 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/din_q_reg[5]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -4.445 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/din_q_reg[0]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.446 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/din_q_reg[1]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -4.519 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/din_q_reg[2]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.478 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/din_q_reg[1]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -4.534 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/din_q_reg[1]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.496 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/din_q_reg[0]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -4.644 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/din_q_reg[7]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.520 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/din_q_reg[1]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -4.650 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/n1d_reg[1]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.524 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/n1d_reg[0]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -4.652 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/n1d_reg[2]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.608 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/din_q_reg[0]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
-There is a large setup violation of -4.655 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/din_q_reg[0]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.642 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/n1d_reg[2]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
-There is a large setup violation of -4.671 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/din_q_reg[1]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.666 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/n1d_reg[3]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
-There is a large setup violation of -4.752 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/n1d_reg[3]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.688 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/din_q_reg[0]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
-There is a large setup violation of -4.775 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/n1d_reg[0]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.705 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/n1d_reg[1]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#21 Warning
 Large setup violation  
-There is a large setup violation of -4.791 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/din_q_reg[1]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.716 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/din_q_reg[2]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#22 Warning
 Large setup violation  
-There is a large setup violation of -4.792 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/n1d_reg[1]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.800 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/din_q_reg[7]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#23 Warning
 Large setup violation  
-There is a large setup violation of -4.939 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/n1d_reg[3]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.822 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/n1d_reg[3]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#24 Warning
 Large setup violation  
-There is a large setup violation of -4.982 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/n1d_reg[2]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.875 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/n1d_reg[1]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#25 Warning
 Large setup violation  
-There is a large setup violation of -5.007 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/n1d_reg[2]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.905 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/n1d_reg[1]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#26 Warning
 Large setup violation  
-There is a large setup violation of -5.016 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_g/din_q_reg[0]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.918 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/n1d_reg[3]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#27 Warning
 Large setup violation  
-There is a large setup violation of -5.017 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/n1d_reg[1]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.937 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_r/n1d_reg[2]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#28 Warning
 Large setup violation  
-There is a large setup violation of -5.319 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/n1d_reg[3]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.048 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/encode_inst_b/n1d_reg[2]/D (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#29 Warning
 Large setup violation  
-There is a large setup violation of -5.808 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_b/OSERDESE2_inst_MASTER/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.755 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_b/OSERDESE2_inst_SLAVE/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#30 Warning
 Large setup violation  
-There is a large setup violation of -5.828 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_b/OSERDESE2_inst_SLAVE/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.789 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_b/OSERDESE2_inst_MASTER/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#31 Warning
 Large setup violation  
-There is a large setup violation of -5.871 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_g/OSERDESE2_inst_MASTER/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.849 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_g/OSERDESE2_inst_SLAVE/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#32 Warning
 Large setup violation  
-There is a large setup violation of -5.878 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_g/OSERDESE2_inst_SLAVE/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.903 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/inst_parallel_to_serial_clk/OSERDESE2_inst_MASTER/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#33 Warning
 Large setup violation  
-There is a large setup violation of -5.884 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_r/OSERDESE2_inst_MASTER/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.916 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_g/OSERDESE2_inst_MASTER/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#34 Warning
 Large setup violation  
-There is a large setup violation of -6.077 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/inst_parallel_to_serial_clk/OSERDESE2_inst_MASTER/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.917 ns between ddr3_tx_buffer/hdmi_rst_n_reg_replica/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_r/OSERDESE2_inst_SLAVE/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#35 Warning
 Large setup violation  
-There is a large setup violation of -6.088 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_r/OSERDESE2_inst_SLAVE/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.919 ns between ddr3_tx_buffer/hdmi_rst_n_reg_replica/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_r/OSERDESE2_inst_MASTER/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#36 Warning
 Large setup violation  
-There is a large setup violation of -6.090 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/inst_parallel_to_serial_clk/OSERDESE2_inst_SLAVE/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.969 ns between ddr3_tx_buffer/hdmi_rst_n_reg/C (clocked by clk_pll_i) and u_hdmi_driver/u_hdmi_trans/inst_parallel_to_serial_clk/OSERDESE2_inst_SLAVE/RST (clocked by clk_out1_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

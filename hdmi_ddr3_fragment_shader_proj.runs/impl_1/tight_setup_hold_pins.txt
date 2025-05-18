@@ -2,11 +2,11 @@
 | Launch Setup Clock | Launch Hold Clock | Pin                                                                              |
 +====================+===================+==================================================================================+
 | clk_pll_i          | clk_pll_i         | u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_r/OSERDESE2_inst_SLAVE/RST     |
-| clk_pll_i          | clk_pll_i         | u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_b/OSERDESE2_inst_SLAVE/RST     |
 | clk_pll_i          | clk_pll_i         | u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_r/OSERDESE2_inst_MASTER/RST    |
-| clk_pll_i          | clk_pll_i         | u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_b/OSERDESE2_inst_MASTER/RST    |
-| clk_pll_i          | clk_pll_i         | u_hdmi_driver/u_hdmi_trans/inst_parallel_to_serial_clk/OSERDESE2_inst_SLAVE/RST  |
-| clk_pll_i          | clk_pll_i         | u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_g/OSERDESE2_inst_MASTER/RST    |
 | clk_pll_i          | clk_pll_i         | u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_g/OSERDESE2_inst_SLAVE/RST     |
+| clk_pll_i          | clk_pll_i         | u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_b/OSERDESE2_inst_MASTER/RST    |
+| clk_pll_i          | clk_pll_i         | u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_b/OSERDESE2_inst_SLAVE/RST     |
+| clk_pll_i          | clk_pll_i         | u_hdmi_driver/u_hdmi_trans/parallel_to_serial_chn_g/OSERDESE2_inst_MASTER/RST    |
+| clk_pll_i          | clk_pll_i         | u_hdmi_driver/u_hdmi_trans/inst_parallel_to_serial_clk/OSERDESE2_inst_SLAVE/RST  |
 | clk_pll_i          | clk_pll_i         | u_hdmi_driver/u_hdmi_trans/inst_parallel_to_serial_clk/OSERDESE2_inst_MASTER/RST |
 +--------------------+-------------------+----------------------------------------------------------------------------------+

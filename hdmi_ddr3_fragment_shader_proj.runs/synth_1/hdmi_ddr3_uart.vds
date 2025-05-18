@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Fri May 16 03:36:50 2025
-# Process ID         : 22604
+# Start of session at: Sun May 18 09:34:26 2025
+# Process ID         : 14300
 # Current directory  : C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1
 # Command line       : vivado.exe -log hdmi_ddr3_uart.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_ddr3_uart.tcl
 # Log file           : C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/hdmi_ddr3_uart.vds
@@ -19,7 +19,7 @@
 # Host memory        : 16873 MB
 # Swap memory        : 30064 MB
 # Total Virtual      : 46938 MB
-# Available Virtual  : 19872 MB
+# Available Virtual  : 16277 MB
 #-----------------------------------------------------------
 source hdmi_ddr3_uart.tcl -notrace
 Command: synth_design -top hdmi_ddr3_uart -part xc7a200tfbg484-2
@@ -33,9 +33,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200
 INFO: [Device 21-403] Loading part xc7a200tfbg484-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11236
+INFO: [Synth 8-7075] Helper process launched with PID 25740
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1077.941 ; gain = 467.402
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1078.938 ; gain = 468.383
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'SHIFTIN1', assumed default net type 'wire' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/hdmi/parallel_serial.v:101]
 INFO: [Synth 8-11241] undeclared symbol 'SHIFTIN2', assumed default net type 'wire' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/hdmi/parallel_serial.v:102]
@@ -46,169 +46,193 @@ INFO: [Synth 8-6155] done synthesizing module 'double_buffer_ctrl' (0#1) [C:/Wor
 INFO: [Synth 8-6157] synthesizing module 'fragment_scanner' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/fragment_scanner.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'fragment_scanner' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/fragment_scanner.v:3]
 INFO: [Synth 8-638] synthesizing module 'shader' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:21]
-WARNING: [Synth 8-614] signal 'in_ready_and_in_valid' is read in the process but is not in the sensitivity list [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:1682]
-INFO: [Synth 8-3491] module 'ITimeConvertor_UInt_64_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ITimeConvertor_UInt_64_SFixedPoint_16_12.vhd:6' bound to instance 'itime_convertor_0' of component 'ITimeConvertor_UInt_64_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2405]
-INFO: [Synth 8-638] synthesizing module 'ITimeConvertor_UInt_64_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ITimeConvertor_UInt_64_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'ITimeConvertor_UInt_64_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ITimeConvertor_UInt_64_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-3491] module 'FragCoordValueConvertor_UInt_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_FragCoordValueConvertor_UInt_12_SFixedPoint_16_12.vhd:6' bound to instance 'fragcoord_value_convertor_1' of component 'FragCoordValueConvertor_UInt_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2411]
-INFO: [Synth 8-638] synthesizing module 'FragCoordValueConvertor_UInt_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_FragCoordValueConvertor_UInt_12_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'FragCoordValueConvertor_UInt_12_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_FragCoordValueConvertor_UInt_12_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-3491] module 'FragCoordValueConvertor_UInt_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_FragCoordValueConvertor_UInt_12_SFixedPoint_16_12.vhd:6' bound to instance 'fragcoord_value_convertor_2' of component 'FragCoordValueConvertor_UInt_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2417]
-INFO: [Synth 8-3491] module 'Constants_ba508eb47443af17_Core' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_ba508eb47443af17_Core.vhd:6' bound to instance 'consts_opt' of component 'Constants_ba508eb47443af17_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2423]
-INFO: [Synth 8-638] synthesizing module 'Constants_ba508eb47443af17_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_ba508eb47443af17_Core.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'Constants_ba508eb47443af17_Core' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_ba508eb47443af17_Core.vhd:18]
-INFO: [Synth 8-3491] module 'ArithShifter_NEG9_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG9_SFixedPoint_16_12.vhd:6' bound to instance 'arith_shifter_3' of component 'ArithShifter_NEG9_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2434]
-INFO: [Synth 8-638] synthesizing module 'ArithShifter_NEG9_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG9_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'ArithShifter_NEG9_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG9_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-3491] module 'ArithShifter_NEG7_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG7_SFixedPoint_16_12.vhd:6' bound to instance 'arith_shifter_4' of component 'ArithShifter_NEG7_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2440]
-INFO: [Synth 8-638] synthesizing module 'ArithShifter_NEG7_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG7_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'ArithShifter_NEG7_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG7_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-3491] module 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'addition_5' of component 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2446]
-INFO: [Synth 8-638] synthesizing module 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:14]
-INFO: [Synth 8-3491] module 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtraction_6' of component 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2453]
-INFO: [Synth 8-638] synthesizing module 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:14]
-INFO: [Synth 8-3491] module 'ArithShifter_NEG9_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG9_SFixedPoint_16_12.vhd:6' bound to instance 'arith_shifter_7' of component 'ArithShifter_NEG9_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2460]
-INFO: [Synth 8-3491] module 'ArithShifter_NEG7_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG7_SFixedPoint_16_12.vhd:6' bound to instance 'arith_shifter_8' of component 'ArithShifter_NEG7_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2466]
-INFO: [Synth 8-3491] module 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'addition_9' of component 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2472]
-INFO: [Synth 8-3491] module 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtraction_10' of component 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2479]
-INFO: [Synth 8-3491] module 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtraction_11' of component 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2486]
-INFO: [Synth 8-3491] module 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'addition_12' of component 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2493]
-INFO: [Synth 8-3491] module 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'addition_13' of component 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2500]
-INFO: [Synth 8-3491] module 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'addition_14' of component 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2507]
-INFO: [Synth 8-3491] module 'Fract_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Fract_SFixedPoint_16_12.vhd:6' bound to instance 'fract_15' of component 'Fract_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2514]
+WARNING: [Synth 8-614] signal 'in_ready_and_in_valid' is read in the process but is not in the sensitivity list [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2190]
+INFO: [Synth 8-3491] module 'Convert_UInt_64_SFixedPoint_36_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_UInt_64_SFixedPoint_36_12.vhd:6' bound to instance 'to_sfixed' of component 'Convert_UInt_64_SFixedPoint_36_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3301]
+INFO: [Synth 8-638] synthesizing module 'Convert_UInt_64_SFixedPoint_36_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_UInt_64_SFixedPoint_36_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Convert_UInt_64_SFixedPoint_36_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_UInt_64_SFixedPoint_36_12.vhd:13]
+INFO: [Synth 8-3491] module 'Shift_Neg20_SFixedPoint_36_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg20_SFixedPoint_36_12.vhd:6' bound to instance 'shifter' of component 'Shift_Neg20_SFixedPoint_36_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3307]
+INFO: [Synth 8-638] synthesizing module 'Shift_Neg20_SFixedPoint_36_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg20_SFixedPoint_36_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Shift_Neg20_SFixedPoint_36_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg20_SFixedPoint_36_12.vhd:13]
+INFO: [Synth 8-3491] module 'Convert_SFixedPoint_36_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_SFixedPoint_36_12_SFixedPoint_16_12.vhd:6' bound to instance 'to_sfixed_1' of component 'Convert_SFixedPoint_36_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3313]
+INFO: [Synth 8-638] synthesizing module 'Convert_SFixedPoint_36_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_SFixedPoint_36_12_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Convert_SFixedPoint_36_12_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_SFixedPoint_36_12_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-3491] module 'Convert_UInt_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_UInt_12_SFixedPoint_16_12.vhd:6' bound to instance 'to_sfixed_2' of component 'Convert_UInt_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3319]
+INFO: [Synth 8-638] synthesizing module 'Convert_UInt_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_UInt_12_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Convert_UInt_12_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_UInt_12_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-3491] module 'Convert_UInt_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_UInt_12_SFixedPoint_16_12.vhd:6' bound to instance 'to_sfixed_3' of component 'Convert_UInt_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3325]
+INFO: [Synth 8-3491] module 'Shift_Neg9_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg9_SFixedPoint_16_12.vhd:6' bound to instance 'shifter_1' of component 'Shift_Neg9_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3331]
+INFO: [Synth 8-638] synthesizing module 'Shift_Neg9_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg9_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Shift_Neg9_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg9_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-3491] module 'Shift_Neg7_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg7_SFixedPoint_16_12.vhd:6' bound to instance 'shifter_2' of component 'Shift_Neg7_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3337]
+INFO: [Synth 8-638] synthesizing module 'Shift_Neg7_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg7_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Shift_Neg7_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg7_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-3491] module 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'adder' of component 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3343]
+INFO: [Synth 8-638] synthesizing module 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:14]
+INFO: [Synth 8-3491] module 'Constants_e3cfae0963b7234f_Core' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_e3cfae0963b7234f_Core.vhd:6' bound to instance 'constant_opt' of component 'Constants_e3cfae0963b7234f_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3350]
+INFO: [Synth 8-638] synthesizing module 'Constants_e3cfae0963b7234f_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_e3cfae0963b7234f_Core.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Constants_e3cfae0963b7234f_Core' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_e3cfae0963b7234f_Core.vhd:12]
+INFO: [Synth 8-3491] module 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtractor' of component 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3355]
+INFO: [Synth 8-638] synthesizing module 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:14]
+INFO: [Synth 8-3491] module 'Shift_Neg9_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg9_SFixedPoint_16_12.vhd:6' bound to instance 'shifter_3' of component 'Shift_Neg9_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3362]
+INFO: [Synth 8-3491] module 'Shift_Neg7_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg7_SFixedPoint_16_12.vhd:6' bound to instance 'shifter_4' of component 'Shift_Neg7_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3368]
+INFO: [Synth 8-3491] module 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'adder_1' of component 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3374]
+INFO: [Synth 8-3491] module 'Constants_31fa47991dc69fb6_Core' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_31fa47991dc69fb6_Core.vhd:6' bound to instance 'constant_1_opt' of component 'Constants_31fa47991dc69fb6_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3381]
+INFO: [Synth 8-638] synthesizing module 'Constants_31fa47991dc69fb6_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_31fa47991dc69fb6_Core.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Constants_31fa47991dc69fb6_Core' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_31fa47991dc69fb6_Core.vhd:12]
+INFO: [Synth 8-3491] module 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtractor_1' of component 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3386]
+INFO: [Synth 8-3491] module 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtractor_2' of component 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3393]
+INFO: [Synth 8-3491] module 'Constants_e3cfae0963b7234f_Core' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_e3cfae0963b7234f_Core.vhd:6' bound to instance 'constant_2_opt' of component 'Constants_e3cfae0963b7234f_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3400]
+INFO: [Synth 8-3491] module 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'adder_2' of component 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3405]
+INFO: [Synth 8-3491] module 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'adder_3' of component 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3412]
+INFO: [Synth 8-3491] module 'Constants_e3cfae0963b7234f_Core' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_e3cfae0963b7234f_Core.vhd:6' bound to instance 'constant_3_opt' of component 'Constants_e3cfae0963b7234f_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3419]
+INFO: [Synth 8-3491] module 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'adder_4' of component 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3424]
+INFO: [Synth 8-3491] module 'Fract_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Fract_SFixedPoint_16_12.vhd:6' bound to instance 'fract' of component 'Fract_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3431]
 INFO: [Synth 8-638] synthesizing module 'Fract_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Fract_SFixedPoint_16_12.vhd:13]
 INFO: [Synth 8-256] done synthesizing module 'Fract_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Fract_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-3491] module 'MinPositiveXandOneMinusX_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_MinPositiveXandOneMinusX_SFixedPoint_16_12.vhd:6' bound to instance 'minx1mx_16' of component 'MinPositiveXandOneMinusX_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2520]
-INFO: [Synth 8-638] synthesizing module 'MinPositiveXandOneMinusX_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_MinPositiveXandOneMinusX_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'MinPositiveXandOneMinusX_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_MinPositiveXandOneMinusX_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-3491] module 'Fract_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Fract_SFixedPoint_16_12.vhd:6' bound to instance 'fract_17' of component 'Fract_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2526]
-INFO: [Synth 8-3491] module 'MinPositiveXandOneMinusX_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_MinPositiveXandOneMinusX_SFixedPoint_16_12.vhd:6' bound to instance 'minx1mx_18' of component 'MinPositiveXandOneMinusX_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2532]
-INFO: [Synth 8-3491] module 'Ceil_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Ceil_SFixedPoint_16_12.vhd:6' bound to instance 'ceil_19' of component 'Ceil_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2538]
+INFO: [Synth 8-3491] module 'Fract_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Fract_SFixedPoint_16_12.vhd:6' bound to instance 'fract_1' of component 'Fract_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3437]
+INFO: [Synth 8-3491] module 'Constants_99e998fd468424c7_Core' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_99e998fd468424c7_Core.vhd:6' bound to instance 'constant_4_opt' of component 'Constants_99e998fd468424c7_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3443]
+INFO: [Synth 8-638] synthesizing module 'Constants_99e998fd468424c7_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_99e998fd468424c7_Core.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Constants_99e998fd468424c7_Core' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_99e998fd468424c7_Core.vhd:12]
+INFO: [Synth 8-3491] module 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtractor_3' of component 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3448]
+INFO: [Synth 8-3491] module 'Constants_99e998fd468424c7_Core' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_99e998fd468424c7_Core.vhd:6' bound to instance 'constant_5_opt' of component 'Constants_99e998fd468424c7_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3455]
+INFO: [Synth 8-3491] module 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtractor_4' of component 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3460]
+INFO: [Synth 8-3491] module 'Min_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Min_SFixedPoint_16_12.vhd:6' bound to instance 'min' of component 'Min_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3467]
+INFO: [Synth 8-638] synthesizing module 'Min_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Min_SFixedPoint_16_12.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Min_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Min_SFixedPoint_16_12.vhd:14]
+INFO: [Synth 8-3491] module 'Min_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Min_SFixedPoint_16_12.vhd:6' bound to instance 'min_1' of component 'Min_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3474]
+INFO: [Synth 8-3491] module 'Ceil_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Ceil_SFixedPoint_16_12.vhd:6' bound to instance 'ceil' of component 'Ceil_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3481]
 INFO: [Synth 8-638] synthesizing module 'Ceil_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Ceil_SFixedPoint_16_12.vhd:13]
 INFO: [Synth 8-256] done synthesizing module 'Ceil_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Ceil_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-3491] module 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtraction_20' of component 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2544]
-INFO: [Synth 8-3491] module 'Ceil_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Ceil_SFixedPoint_16_12.vhd:6' bound to instance 'ceil_21' of component 'Ceil_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2551]
-INFO: [Synth 8-3491] module 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtraction_22' of component 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2557]
-INFO: [Synth 8-3491] module 'Multiply_SInt_29_SInt_29_AddendsGenerator' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SInt_29_SInt_29_AddendsGenerator.vhd:6' bound to instance 'multiplication_23_sint_mul_gen_addends' of component 'Multiply_SInt_29_SInt_29_AddendsGenerator' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2564]
+INFO: [Synth 8-3491] module 'Ceil_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Ceil_SFixedPoint_16_12.vhd:6' bound to instance 'ceil_1' of component 'Ceil_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3487]
+INFO: [Synth 8-3491] module 'Constants_ed453308e8a82f66_Core' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_ed453308e8a82f66_Core.vhd:6' bound to instance 'constant_6_opt' of component 'Constants_ed453308e8a82f66_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3493]
+INFO: [Synth 8-638] synthesizing module 'Constants_ed453308e8a82f66_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_ed453308e8a82f66_Core.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Constants_ed453308e8a82f66_Core' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_ed453308e8a82f66_Core.vhd:12]
+INFO: [Synth 8-3491] module 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtractor_5' of component 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3498]
+INFO: [Synth 8-3491] module 'Constants_ed453308e8a82f66_Core' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_ed453308e8a82f66_Core.vhd:6' bound to instance 'constant_7_opt' of component 'Constants_ed453308e8a82f66_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3505]
+INFO: [Synth 8-3491] module 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtractor_6' of component 'EqualTypesSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3510]
+INFO: [Synth 8-3491] module 'Multiply_SInt_29_SInt_29_AddendsGenerator' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SInt_29_SInt_29_AddendsGenerator.vhd:6' bound to instance 'multiplier_sint_mul_gen_addends' of component 'Multiply_SInt_29_SInt_29_AddendsGenerator' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3517]
 INFO: [Synth 8-638] synthesizing module 'Multiply_SInt_29_SInt_29_AddendsGenerator' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SInt_29_SInt_29_AddendsGenerator.vhd:42]
 INFO: [Synth 8-256] done synthesizing module 'Multiply_SInt_29_SInt_29_AddendsGenerator' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SInt_29_SInt_29_AddendsGenerator.vhd:42]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_0' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2599]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_0' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3552]
 INFO: [Synth 8-638] synthesizing module 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:14]
 INFO: [Synth 8-256] done synthesizing module 'BitsAdd_SInt_58_SInt_58' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:14]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_1' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2606]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_2' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2613]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_3' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2620]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_4' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2627]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_5' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2634]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_6' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2641]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_7' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2648]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_8' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2655]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_9' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2662]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_10' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2669]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_11' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2676]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_12' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2683]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_13' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2690]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_14' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2697]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_15' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2704]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_16' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2711]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_17' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2718]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_18' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2725]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_19' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2732]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_20' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2739]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_21' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2746]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_22' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2753]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_23' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2760]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_24' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2767]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_25' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2774]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_adder_26' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2781]
-INFO: [Synth 8-3491] module 'BitsSubtract_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_23_sint_mul_subtractor' of component 'BitsSubtract_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2788]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_1' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3559]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_2' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3566]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_3' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3573]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_4' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3580]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_5' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3587]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_6' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3594]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_7' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3601]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_8' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3608]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_9' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3615]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_10' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3622]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_11' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3629]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_12' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3636]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_13' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3643]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_14' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3650]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_15' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3657]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_16' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3664]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_17' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3671]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_18' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3678]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_19' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3685]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_20' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3692]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_21' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3699]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_22' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3706]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_23' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3713]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_24' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3720]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_25' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3727]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_adder_26' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3734]
+INFO: [Synth 8-3491] module 'BitsSubtract_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_sint_mul_subtractor' of component 'BitsSubtract_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3741]
 INFO: [Synth 8-638] synthesizing module 'BitsSubtract_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SInt_58_SInt_58.vhd:14]
 INFO: [Synth 8-256] done synthesizing module 'BitsSubtract_SInt_58_SInt_58' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SInt_58_SInt_58.vhd:14]
-INFO: [Synth 8-3491] module 'Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator.vhd:6' bound to instance 'multiplication_23_tc' of component 'Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2795]
+INFO: [Synth 8-3491] module 'Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator.vhd:6' bound to instance 'multiplier_tc' of component 'Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3748]
 INFO: [Synth 8-638] synthesizing module 'Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator.vhd:13]
 INFO: [Synth 8-256] done synthesizing module 'Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator.vhd:13]
-INFO: [Synth 8-3491] module 'Multiply_SInt_29_SInt_29_AddendsGenerator' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SInt_29_SInt_29_AddendsGenerator.vhd:6' bound to instance 'multiplication_24_sint_mul_gen_addends' of component 'Multiply_SInt_29_SInt_29_AddendsGenerator' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2801]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_0' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2836]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_1' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2843]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_2' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2850]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_3' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2857]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_4' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2864]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_5' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2871]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_6' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2878]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_7' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2885]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_8' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2892]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_9' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2899]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_10' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2906]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_11' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2913]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_12' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2920]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_13' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2927]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_14' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2934]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_15' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2941]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_16' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2948]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_17' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2955]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_18' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2962]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_19' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2969]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_20' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2976]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_21' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2983]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_22' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2990]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_23' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:2997]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_24' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3004]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_25' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3011]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_adder_26' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3018]
-INFO: [Synth 8-3491] module 'BitsSubtract_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_24_sint_mul_subtractor' of component 'BitsSubtract_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3025]
-INFO: [Synth 8-3491] module 'Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator.vhd:6' bound to instance 'multiplication_24_tc' of component 'Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3032]
-INFO: [Synth 8-3491] module 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'addition_25' of component 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3038]
-INFO: [Synth 8-3491] module 'ArithShifter_NEG3_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG3_SFixedPoint_16_12.vhd:6' bound to instance 'arith_shifter_26' of component 'ArithShifter_NEG3_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3045]
-INFO: [Synth 8-638] synthesizing module 'ArithShifter_NEG3_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG3_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'ArithShifter_NEG3_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG3_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-3491] module 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'addition_27' of component 'BitsAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3051]
-INFO: [Synth 8-3491] module 'ArithShifter_NEG1_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG1_SFixedPoint_16_12.vhd:6' bound to instance 'arith_shifter_28' of component 'ArithShifter_NEG1_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3058]
-INFO: [Synth 8-638] synthesizing module 'ArithShifter_NEG1_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG1_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'ArithShifter_NEG1_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG1_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-3491] module 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtraction_29' of component 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3064]
-INFO: [Synth 8-3491] module 'ArithShifter_NEG2_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG2_SFixedPoint_16_12.vhd:6' bound to instance 'arith_shifter_30' of component 'ArithShifter_NEG2_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3071]
-INFO: [Synth 8-638] synthesizing module 'ArithShifter_NEG2_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG2_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'ArithShifter_NEG2_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_NEG2_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-3491] module 'Fract_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Fract_SFixedPoint_16_12.vhd:6' bound to instance 'fract_31' of component 'Fract_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3077]
-INFO: [Synth 8-3491] module 'ArithShifter_1_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_1_SFixedPoint_16_12.vhd:6' bound to instance 'arith_shifter_32' of component 'ArithShifter_1_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3083]
-INFO: [Synth 8-638] synthesizing module 'ArithShifter_1_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_1_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'ArithShifter_1_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_1_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-3491] module 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'subtraction_33' of component 'BitsSubtract_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3089]
-INFO: [Synth 8-3491] module 'Min_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Min_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'min_34' of component 'Min_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3096]
-INFO: [Synth 8-638] synthesizing module 'Min_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Min_SFixedPoint_16_12_SFixedPoint_16_12.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'Min_SFixedPoint_16_12_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Min_SFixedPoint_16_12_SFixedPoint_16_12.vhd:14]
-INFO: [Synth 8-3491] module 'ArithShifter_2_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_2_SFixedPoint_16_12.vhd:6' bound to instance 'arith_shifter_35' of component 'ArithShifter_2_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3103]
-INFO: [Synth 8-638] synthesizing module 'ArithShifter_2_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_2_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'ArithShifter_2_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_2_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-3491] module 'Fract_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Fract_SFixedPoint_16_12.vhd:6' bound to instance 'fract_36' of component 'Fract_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3109]
-INFO: [Synth 8-3491] module 'CustomVHDLOperator_447d1b8997193967' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_CustomVHDLOperator_447d1b8997193967.vhd:6' bound to instance 'mux_calc' of component 'CustomVHDLOperator_447d1b8997193967' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3115]
-INFO: [Synth 8-638] synthesizing module 'CustomVHDLOperator_447d1b8997193967' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_CustomVHDLOperator_447d1b8997193967.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'CustomVHDLOperator_447d1b8997193967' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_CustomVHDLOperator_447d1b8997193967.vhd:14]
-INFO: [Synth 8-3491] module 'Multiply_SInt_29_SInt_29_AddendsGenerator' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SInt_29_SInt_29_AddendsGenerator.vhd:6' bound to instance 'multiplication_37_sint_mul_gen_addends' of component 'Multiply_SInt_29_SInt_29_AddendsGenerator' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3122]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_37_sint_mul_adder_0' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3157]
-INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplication_37_sint_mul_adder_1' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3164]
+INFO: [Synth 8-3491] module 'Multiply_SInt_29_SInt_29_AddendsGenerator' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SInt_29_SInt_29_AddendsGenerator.vhd:6' bound to instance 'multiplier_1_sint_mul_gen_addends' of component 'Multiply_SInt_29_SInt_29_AddendsGenerator' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3754]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_0' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3789]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_1' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3796]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_2' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3803]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_3' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3810]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_4' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3817]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_5' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3824]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_6' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3831]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_7' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3838]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_8' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3845]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_9' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3852]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_10' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3859]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_11' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3866]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_12' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3873]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_13' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3880]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_14' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3887]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_15' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3894]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_16' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3901]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_17' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3908]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_18' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3915]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_19' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3922]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_20' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3929]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_21' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3936]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_22' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3943]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_23' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3950]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_24' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3957]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_25' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3964]
+INFO: [Synth 8-3491] module 'BitsAdd_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsAdd_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_adder_26' of component 'BitsAdd_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3971]
+INFO: [Synth 8-3491] module 'BitsSubtract_SInt_58_SInt_58' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BitsSubtract_SInt_58_SInt_58.vhd:6' bound to instance 'multiplier_1_sint_mul_subtractor' of component 'BitsSubtract_SInt_58_SInt_58' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3978]
+INFO: [Synth 8-3491] module 'Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator.vhd:6' bound to instance 'multiplier_1_tc' of component 'Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3985]
+INFO: [Synth 8-3491] module 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'adder_5' of component 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3991]
+INFO: [Synth 8-3491] module 'Shift_Neg3_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg3_SFixedPoint_16_12.vhd:6' bound to instance 'shifter_5' of component 'Shift_Neg3_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:3998]
+INFO: [Synth 8-638] synthesizing module 'Shift_Neg3_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg3_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Shift_Neg3_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg3_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-3491] module 'Constants_99e998fd468424c7_Core' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_99e998fd468424c7_Core.vhd:6' bound to instance 'constant_8_opt' of component 'Constants_99e998fd468424c7_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:4004]
+INFO: [Synth 8-3491] module 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12.vhd:6' bound to instance 'adder_6' of component 'EqualTypesAdd_SFixedPoint_16_12_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:4009]
+INFO: [Synth 8-3491] module 'Shift_Neg1_SFixedPoint_16_12' declared at 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg1_SFixedPoint_16_12.vhd:6' bound to instance 'shifter_6' of component 'Shift_Neg1_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:4016]
 INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-638] synthesizing module 'ArithShifter_4_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_4_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'ArithShifter_4_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_ArithShifter_4_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-638] synthesizing module 'Clamp0To1_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Clamp0To1_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'Clamp0To1_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Clamp0To1_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-638] synthesizing module 'To8bitConvertor_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_To8bitConvertor_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'To8bitConvertor_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_To8bitConvertor_SFixedPoint_16_12.vhd:13]
-INFO: [Synth 8-638] synthesizing module 'Concatenate_Bits_8_Bits_8_Bits_8' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Concatenate_Bits_8_Bits_8_Bits_8.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'Concatenate_Bits_8_Bits_8_Bits_8' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Concatenate_Bits_8_Bits_8_Bits_8.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'Shift_Neg1_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg1_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Shift_Neg1_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg1_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'Shift_Neg2_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg2_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Shift_Neg2_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_Neg2_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'Shift_1_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_1_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Shift_1_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_1_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'Shift_2_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_2_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Shift_2_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_2_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'Slice_28' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Slice_28.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Slice_28' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Slice_28.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'BinaryMultiplexer_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BinaryMultiplexer_SFixedPoint_16_12.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'BinaryMultiplexer_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_BinaryMultiplexer_SFixedPoint_16_12.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'Constants_22096c00982b9179_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_22096c00982b9179_Core.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Constants_22096c00982b9179_Core' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_22096c00982b9179_Core.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'Shift_4_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_4_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Shift_4_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_4_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'Constants_de92917d4133a7ee_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_de92917d4133a7ee_Core.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Constants_de92917d4133a7ee_Core' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_de92917d4133a7ee_Core.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'Max_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Max_SFixedPoint_16_12.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Max_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Max_SFixedPoint_16_12.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'Constants_13749133a7754138_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_13749133a7754138_Core.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Constants_13749133a7754138_Core' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_13749133a7754138_Core.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'Constants_6b991d5b30977123_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_6b991d5b30977123_Core.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Constants_6b991d5b30977123_Core' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_6b991d5b30977123_Core.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'Shift_8_SFixedPoint_16_12' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_8_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Shift_8_SFixedPoint_16_12' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Shift_8_SFixedPoint_16_12.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'Convert_SFixedPoint_16_12_UFixedPoint_8_0' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_SFixedPoint_16_12_UFixedPoint_8_0.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Convert_SFixedPoint_16_12_UFixedPoint_8_0' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Convert_SFixedPoint_16_12_UFixedPoint_8_0.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'Concatenate_UFixedPoint_8_0_UFixedPoint_8_0' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Concatenate_UFixedPoint_8_0_UFixedPoint_8_0.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Concatenate_UFixedPoint_8_0_UFixedPoint_8_0' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Concatenate_UFixedPoint_8_0_UFixedPoint_8_0.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'Constants_e22224e03e3e720f_Core' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_e22224e03e3e720f_Core.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Constants_e22224e03e3e720f_Core' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Constants_e22224e03e3e720f_Core.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'Concatenate_Bits_16_Bits_8' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Concatenate_Bits_16_Bits_8.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Concatenate_Bits_16_Bits_8' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_Concatenate_Bits_16_Bits_8.vhd:14]
 INFO: [Synth 8-256] done synthesizing module 'shader' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/shader/hdl_shader.vhd:21]
 INFO: [Synth 8-6157] synthesizing module 'ddr3_rx_buffer_24' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/ddr3_rx_buffer_24.v:44]
 	Parameter DDR3_ADDR_MAX bound to: 786424 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'ddr3_rx_fifo' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-22604-Gralerfics/realtime/ddr3_rx_fifo_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ddr3_rx_fifo' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-22604-Gralerfics/realtime/ddr3_rx_fifo_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ddr3_rx_fifo' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-14300-Gralerfics/realtime/ddr3_rx_fifo_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddr3_rx_fifo' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-14300-Gralerfics/realtime/ddr3_rx_fifo_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'ddr3_rx_buffer_24' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/ddr3_rx_buffer_24.v:44]
 INFO: [Synth 8-6157] synthesizing module 'ddr3_tx_buffer' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/ddr3_tx_buffer.v:44]
 	Parameter DDR3_ADDR_MAX bound to: 786424 - type: integer 
 	Parameter WR_MAX bound to: 896 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'ddr3_tx_fifo' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-22604-Gralerfics/realtime/ddr3_tx_fifo_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ddr3_tx_fifo' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-22604-Gralerfics/realtime/ddr3_tx_fifo_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ddr3_tx_fifo' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-14300-Gralerfics/realtime/ddr3_tx_fifo_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddr3_tx_fifo' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-14300-Gralerfics/realtime/ddr3_tx_fifo_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'ddr3_tx_buffer' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/new/ddr3_tx_buffer.v:44]
 INFO: [Synth 8-6157] synthesizing module 'ddr3_ctrl' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/ddr3/ddr3_ctrl.v:44]
 INFO: [Synth 8-6157] synthesizing module 'ddr3_wr_ctrl' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/ddr3/ddr3_wr_ctrl.v:44]
@@ -217,8 +241,8 @@ INFO: [Synth 8-6157] synthesizing module 'ddr3_rd_ctrl' [C:/Workspace/hdmi_ddr3_
 INFO: [Synth 8-6155] done synthesizing module 'ddr3_rd_ctrl' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/ddr3/ddr3_rd_ctrl.v:44]
 INFO: [Synth 8-6157] synthesizing module 'ddr3_arbit' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/ddr3/ddr3_arbit.v:44]
 INFO: [Synth 8-6155] done synthesizing module 'ddr3_arbit' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/ddr3/ddr3_arbit.v:44]
-INFO: [Synth 8-6157] synthesizing module 'mig_ddr3' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-22604-Gralerfics/realtime/mig_ddr3_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mig_ddr3' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-22604-Gralerfics/realtime/mig_ddr3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mig_ddr3' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-14300-Gralerfics/realtime/mig_ddr3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mig_ddr3' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-14300-Gralerfics/realtime/mig_ddr3_stub.v:5]
 WARNING: [Synth 8-7071] port 'device_temp' of module 'mig_ddr3' is unconnected for instance 'u_mig_ddr3' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/ddr3/ddr3_ctrl.v:173]
 WARNING: [Synth 8-7023] instance 'u_mig_ddr3' of module 'mig_ddr3' has 38 connections declared, but only 37 given [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/ddr3/ddr3_ctrl.v:173]
 INFO: [Synth 8-6155] done synthesizing module 'ddr3_ctrl' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/ddr3/ddr3_ctrl.v:44]
@@ -230,10 +254,10 @@ INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Workspace/hdmi_ddr3_fragm
 	Parameter SYS_FRENCY bound to: 50000000 - type: integer 
 	Parameter BAUD_FRENCY bound to: 115200 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/uart/uart_tx.v:44]
-INFO: [Synth 8-6157] synthesizing module 'ddr3_clock' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-22604-Gralerfics/realtime/ddr3_clock_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ddr3_clock' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-22604-Gralerfics/realtime/ddr3_clock_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'clock' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-22604-Gralerfics/realtime/clock_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'clock' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-22604-Gralerfics/realtime/clock_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ddr3_clock' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-14300-Gralerfics/realtime/ddr3_clock_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ddr3_clock' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-14300-Gralerfics/realtime/ddr3_clock_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clock' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-14300-Gralerfics/realtime/clock_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clock' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/.Xil/Vivado-14300-Gralerfics/realtime/clock_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'hdmi_driver' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/hdmi/hdmi_driver.v:44]
 INFO: [Synth 8-6157] synthesizing module 'vga_driver' [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/hdmi/vga_driver.v:46]
 INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (0#1) [C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.srcs/sources_1/hdmi/vga_driver.v:46]
@@ -289,27 +313,27 @@ WARNING: [Synth 8-7129] Port data_in[8] in module ddr3_rx_buffer_24 is either un
 WARNING: [Synth 8-7129] Port data_in[2] in module ddr3_rx_buffer_24 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port data_in[1] in module ddr3_rx_buffer_24 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port data_in[0] in module ddr3_rx_buffer_24 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[28] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[27] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[26] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[25] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[24] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[23] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[22] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[21] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[20] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[19] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[18] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[17] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[16] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[15] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[14] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[13] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[12] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[3] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[2] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[1] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_clamped[0] in module To8bitConvertor_SFixedPoint_16_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[28] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[27] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[26] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[25] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[24] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[23] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[22] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[21] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[20] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[11] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[10] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[9] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[8] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[7] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[6] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[5] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[4] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[3] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[2] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[1] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[0] in module Convert_SFixedPoint_16_12_UFixedPoint_8_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i[57] in module Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i[56] in module Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i[55] in module Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator is either unconnected or has no load
@@ -339,34 +363,34 @@ WARNING: [Synth 8-7129] Port i[3] in module Multiply_SFixedPoint_16_12_SFixedPoi
 WARNING: [Synth 8-7129] Port i[2] in module Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i[1] in module Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i[0] in module Multiply_SFixedPoint_16_12_SFixedPoint_16_12_Truncated_Truncator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[27] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[26] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[25] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[24] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[23] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[22] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[21] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[20] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[19] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[18] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[17] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[16] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[15] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[14] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[13] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[12] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[11] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[10] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[9] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[8] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[7] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[6] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[5] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[4] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[3] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[2] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[1] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ee[0] in module CustomVHDLOperator_447d1b8997193967 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[27] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[26] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[25] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[24] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[23] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[22] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[21] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[20] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[19] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[18] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[17] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[16] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[15] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[14] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[13] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[12] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[11] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[10] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[9] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[8] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[7] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[6] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[5] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[4] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[3] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[2] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[1] in module Slice_28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i[0] in module Slice_28 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i[28] in module Fract_SFixedPoint_16_12 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i[27] in module Fract_SFixedPoint_16_12 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i[26] in module Fract_SFixedPoint_16_12 is either unconnected or has no load
@@ -381,18 +405,18 @@ WARNING: [Synth 8-7129] Port i[18] in module Fract_SFixedPoint_16_12 is either u
 WARNING: [Synth 8-7129] Port i[17] in module Fract_SFixedPoint_16_12 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1220.078 ; gain = 609.539
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1227.793 ; gain = 617.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1220.078 ; gain = 609.539
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1227.793 ; gain = 617.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1220.078 ; gain = 609.539
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1227.793 ; gain = 617.238
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.289 . Memory (MB): peak = 1220.078 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.319 . Memory (MB): peak = 1227.793 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -417,21 +441,21 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_ddr3_uart_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1317.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1330.457 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1317.117 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1330.457 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ddr3_tx_buffer/ddr3_tx_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.737', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1318.539 ; gain = 708.000
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1333.008 ; gain = 722.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1318.539 ; gain = 708.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1333.008 ; gain = 722.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -540,7 +564,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for ddr3_tx_buffer/ddr3_tx_fifo. (con
 Applied set_property KEEP_HIERARCHY = SOFT for hdmi_clock. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for ddr3_clock. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1318.539 ; gain = 708.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1333.008 ; gain = 722.453
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ddr3_rx_buffer_24'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ddr3_tx_buffer'
@@ -594,17 +618,31 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'd
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'ddr3_arbit'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1318.539 ; gain = 708.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1333.008 ; gain = 722.453
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'sdr/constant_opt' (Constants_e3cfae0963b7234f_Core) to 'sdr/constant_2_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_opt' (Constants_e3cfae0963b7234f_Core) to 'sdr/constant_3_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_4_opt' (Constants_99e998fd468424c7_Core) to 'sdr/constant_5_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_4_opt' (Constants_99e998fd468424c7_Core) to 'sdr/constant_8_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_4_opt' (Constants_99e998fd468424c7_Core) to 'sdr/constant_9_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_4_opt' (Constants_99e998fd468424c7_Core) to 'sdr/constant_10_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_4_opt' (Constants_99e998fd468424c7_Core) to 'sdr/constant_12_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_4_opt' (Constants_99e998fd468424c7_Core) to 'sdr/constant_16_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_4_opt' (Constants_99e998fd468424c7_Core) to 'sdr/constant_17_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_6_opt' (Constants_ed453308e8a82f66_Core) to 'sdr/constant_7_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_13_opt' (Constants_de92917d4133a7ee_Core) to 'sdr/constant_18_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_13_opt' (Constants_de92917d4133a7ee_Core) to 'sdr/constant_19_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_14_opt' (Constants_13749133a7754138_Core) to 'sdr/constant_20_opt'
+INFO: [Synth 8-223] decloning instance 'sdr/constant_14_opt' (Constants_13749133a7754138_Core) to 'sdr/constant_21_opt'
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input   58 Bit       Adders := 5     
 	   2 Input   58 Bit       Adders := 135   
-	   3 Input   29 Bit       Adders := 10    
-	   2 Input   29 Bit       Adders := 19    
+	   3 Input   58 Bit       Adders := 5     
+	   2 Input   29 Bit       Adders := 16    
+	   3 Input   29 Bit       Adders := 13    
 	   2 Input   20 Bit       Adders := 1     
 	   2 Input   16 Bit       Adders := 1     
 	   2 Input   12 Bit       Adders := 5     
@@ -616,24 +654,23 @@ Detailed RTL Component Info :
 +---XORs : 
 	   2 Input      1 Bit         XORs := 42    
 +---Registers : 
-	               64 Bit    Registers := 1     
 	               58 Bit    Registers := 141   
-	               29 Bit    Registers := 106   
+	               29 Bit    Registers := 358   
 	               20 Bit    Registers := 1     
-	               16 Bit    Registers := 1     
-	               12 Bit    Registers := 5     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
 	               10 Bit    Registers := 7     
 	                9 Bit    Registers := 3     
-	                8 Bit    Registers := 27    
+	                8 Bit    Registers := 30    
 	                5 Bit    Registers := 3     
 	                4 Bit    Registers := 10    
-	                1 Bit    Registers := 58    
+	                1 Bit    Registers := 61    
 +---Muxes : 
 	   2 Input   58 Bit        Muxes := 145   
-	   2 Input   29 Bit        Muxes := 5     
+	   2 Input   29 Bit        Muxes := 11    
 	   2 Input   24 Bit        Muxes := 3     
 	   2 Input   16 Bit        Muxes := 1     
-	   2 Input   12 Bit        Muxes := 10    
+	   2 Input   12 Bit        Muxes := 2     
 	   5 Input   10 Bit        Muxes := 3     
 	   2 Input   10 Bit        Muxes := 10    
 	   2 Input    8 Bit        Muxes := 3     
@@ -662,7 +699,7 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-3917] design hdmi_ddr3_uart has port hdmi_hpd driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1318.539 ; gain = 708.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1333.008 ; gain = 722.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -670,20 +707,19 @@ Start Applying XDC Timing Constraints
 WARNING: [Synth 8-565] redefining clock 'clk'
 WARNING: [Synth 8-565] redefining clock 'clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1436.930 ; gain = 826.391
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1442.758 ; gain = 832.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
-info: optimization accepted worst group hill climbing move (-2533.0/oG. 248.0ps)
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1477.211 ; gain = 866.672
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1492.953 ; gain = 882.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1483.656 ; gain = 873.117
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1504.211 ; gain = 893.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -701,64 +737,73 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1666.547 ; gain = 1056.008
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1679.809 ; gain = 1069.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1666.547 ; gain = 1056.008
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1679.809 ; gain = 1069.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.547 ; gain = 1056.008
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1679.809 ; gain = 1069.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.547 ; gain = 1056.008
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1679.809 ; gain = 1069.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.547 ; gain = 1056.008
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1679.809 ; gain = 1069.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.547 ; gain = 1056.008
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1679.809 ; gain = 1069.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+---------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name    | RTL Name                                                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+---------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|hdmi_ddr3_uart | sdr/reg_3_d_multiplication_37_tc_io_o_reg[14]                        | 4      | 15    | YES          | NO                 | YES               | 15     | 0       | 
-|hdmi_ddr3_uart | sdr/reg_4_d_multiplication_38_sint_mul_gen_addends_io_subend_reg[38] | 5      | 9     | YES          | NO                 | YES               | 9      | 0       | 
-|hdmi_ddr3_uart | sdr/reg_9_d_consts_opt_io_c0_1_reg[8]                                | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|hdmi_ddr3_uart | sdr/reg_5_d_multiplication_45_tc_io_o_reg[28]                        | 6      | 13    | YES          | NO                 | YES               | 13     | 0       | 
-|hdmi_ddr3_uart | sdr/reg_5_d_multiplication_45_tc_io_o_reg[15]                        | 7      | 12    | YES          | NO                 | YES               | 12     | 0       | 
-|hdmi_ddr3_uart | sdr/reg_5_d_multiplication_45_tc_io_o_reg[3]                         | 8      | 4     | YES          | NO                 | YES               | 4      | 0       | 
-|hdmi_ddr3_uart | sdr/reg_1_d_multiplication_38_sint_mul_adder_25_io_r_reg[20]         | 4      | 3     | YES          | NO                 | YES               | 3      | 0       | 
-|hdmi_ddr3_uart | sdr/reg_0_d_multiplication_23_sint_mul_adder_25_io_r_reg[27]         | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|hdmi_ddr3_uart | sdr/reg_3_d_multiplication_23_sint_mul_gen_addends_io_subend_reg[40] | 4      | 2     | YES          | NO                 | YES               | 2      | 0       | 
-|hdmi_ddr3_uart | sdr/reg_6_d_fract_36_io_o_reg[11]                                    | 7      | 7     | YES          | NO                 | YES               | 7      | 0       | 
-|hdmi_ddr3_uart | sdr/reg_0_d_multiplication_23_tc_io_o_reg[10]                        | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|hdmi_ddr3_uart | sdr/reg_0_d_multiplication_45_sint_mul_adder_25_io_r_reg[17]         | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|hdmi_ddr3_uart | sdr/reg_4_d_multiplication_45_sint_mul_gen_addends_io_subend_reg[36] | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|hdmi_ddr3_uart | sdr/reg_0_d_multiplication_24_sint_mul_adder_25_io_r_reg[27]         | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|hdmi_ddr3_uart | sdr/reg_3_d_multiplication_24_sint_mul_gen_addends_io_subend_reg[40] | 4      | 2     | YES          | NO                 | YES               | 2      | 0       | 
-|hdmi_ddr3_uart | sdr/reg_9_d_itime_convertor_0_io_o_reg[13]                           | 11     | 14    | YES          | NO                 | YES               | 14     | 0       | 
-|hdmi_ddr3_uart | sdr/reg_18_d_to8bit_cvt_55_io_o_reg[0]                               | 7      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-+---------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++---------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name    | RTL Name                                                        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|hdmi_ddr3_uart | sdr/reg_3_d_multiplier_sint_mul_gen_addends_io_subend_reg[40]   | 4      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_1_d_multiplier_3_sint_mul_adder_25_io_r_reg[20]         | 4      | 3     | YES          | NO                 | YES               | 3      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_0_d_multiplier_sint_mul_adder_25_io_r_reg[27]           | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_10_d_constant_15_opt_io_o_reg[8]                        | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_0_d_multiplier_4_sint_mul_adder_25_io_r_reg[17]         | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_4_d_multiplier_4_sint_mul_gen_addends_io_subend_reg[36] | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_0_d_multiplier_1_sint_mul_adder_25_io_r_reg[27]         | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_3_d_multiplier_1_sint_mul_gen_addends_io_subend_reg[40] | 4      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_0_d_multiplier_tc_io_o_reg[10]                          | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_11_d_constant_11_opt_io_o_reg[11]                       | 12     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_4_d_multiplier_3_sint_mul_gen_addends_io_subend_reg[38] | 5      | 9     | YES          | NO                 | YES               | 9      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_4_d_multiplier_2_tc_io_o_reg[26]                        | 5      | 18    | YES          | NO                 | YES               | 18     | 0       | 
+|hdmi_ddr3_uart | sdr/reg_3_d_constant_16_opt_io_o_reg[12]                        | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_10_d_constant_16_opt_io_o_reg[12]                       | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_19_d_constant_16_opt_io_o_reg[12]                       | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_23_d_constant_16_opt_io_o_reg[12]                       | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_6_d_multiplier_4_tc_io_o_reg[28]                        | 7      | 13    | YES          | NO                 | YES               | 13     | 0       | 
+|hdmi_ddr3_uart | sdr/reg_6_d_multiplier_4_tc_io_o_reg[15]                        | 8      | 12    | YES          | NO                 | YES               | 12     | 0       | 
+|hdmi_ddr3_uart | sdr/reg_6_d_multiplier_4_tc_io_o_reg[3]                         | 9      | 4     | YES          | NO                 | YES               | 4      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_21_d_constant_14_opt_io_o_reg[11]                       | 22     | 12    | YES          | NO                 | YES               | 0      | 12      | 
+|hdmi_ddr3_uart | sdr/reg_25_d_constant_22_opt_io_o_reg[7]                        | 26     | 5     | YES          | NO                 | YES               | 0      | 5       | 
+|hdmi_ddr3_uart | sdr/reg_25_valid_chain_reg[0]                                   | 26     | 1     | YES          | NO                 | YES               | 0      | 1       | 
+|hdmi_ddr3_uart | sdr/reg_4_d_subtractor_9_io_r_reg[28]                           | 5      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_4_l_mux_io_i1_reg[11]                                   | 5      | 7     | YES          | NO                 | YES               | 7      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_4_d_constant_6_opt_io_o_reg[14]                         | 5      | 3     | YES          | NO                 | YES               | 3      | 0       | 
+|hdmi_ddr3_uart | sdr/reg_10_d_to_sfixed_1_io_o_reg[13]                           | 11     | 14    | YES          | NO                 | YES               | 14     | 0       | 
++---------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -787,46 +832,47 @@ Report Cell Usage:
 |3     |ddr3_rx_fifo |     1|
 |4     |ddr3_tx_fifo |     1|
 |5     |mig_ddr3     |     1|
-|6     |CARRY4       |   514|
-|7     |LUT1         |   187|
-|8     |LUT2         |  1903|
-|9     |LUT3         |   343|
-|10    |LUT4         |   116|
-|11    |LUT5         |   135|
-|12    |LUT6         |   165|
+|6     |CARRY4       |   547|
+|7     |LUT1         |   192|
+|8     |LUT2         |  2112|
+|9     |LUT3         |   321|
+|10    |LUT4         |   164|
+|11    |LUT5         |   167|
+|12    |LUT6         |   182|
 |13    |MUXF7        |     1|
 |14    |OSERDESE2    |     8|
-|16    |SRL16E       |    88|
-|17    |FDCE         |  2435|
-|18    |FDPE         |     9|
-|19    |FDRE         |   167|
-|20    |IBUF         |     1|
-|21    |OBUF         |     2|
-|22    |OBUFDS       |     4|
+|16    |SRL16E       |   106|
+|17    |SRLC32E      |    18|
+|18    |FDCE         |  2637|
+|19    |FDPE         |     9|
+|20    |FDRE         |   203|
+|21    |IBUF         |     1|
+|22    |OBUF         |     2|
+|23    |OBUFDS       |     4|
 +------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.547 ; gain = 1056.008
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1679.809 ; gain = 1069.254
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1666.547 ; gain = 957.547
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.547 ; gain = 1056.008
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1679.809 ; gain = 964.039
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1679.809 ; gain = 1069.254
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1666.547 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 519 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1679.809 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 552 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1681.969 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1690.781 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: e8baf76a
+Synth Design complete | Checksum: c3cd0913
 INFO: [Common 17-83] Releasing license: Synthesis
-234 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
+272 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 1681.969 ; gain = 1309.773
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1681.969 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1690.781 ; gain = 1319.480
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1690.781 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Workspace/hdmi_ddr3_fragment_shader_proj/hdmi_ddr3_fragment_shader_proj.runs/synth_1/hdmi_ddr3_uart.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file hdmi_ddr3_uart_utilization_synth.rpt -pb hdmi_ddr3_uart_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri May 16 03:37:34 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun May 18 09:35:09 2025...
